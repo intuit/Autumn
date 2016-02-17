@@ -1,0 +1,44 @@
+#!/bin/sh
+
+#
+# Copyright 2016 Intuit
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+
+#
+# Runs at the end of git flow release start
+#
+# Positional arguments:
+# $1    The version (including the version prefix)
+# $2    The origin remote
+# $3    The full branch name (including the release prefix)
+#
+
+VERSION=$1
+ORIGIN=$2
+BRANCH=$3
+
+fromPom() {
+  mvn -f $1 help:evaluate -Dexpression=$2 | sed -n -e '/^\[.*\]/ !{ p; }'
+}
+
+pom=./pom.xml
+version=`fromPom $pom project.version`
+
+find . -name pom.xml -type f -not -path "*target*" \
+  -exec sed -i '' -e "s#<version>$version</version>#<version>$VERSION</version>#g" {} \; 2>/dev/null
+git commit -a -m "milestone: $VERSION"
+
+# To terminate the git-flow action, return a non-zero exit code.
+exit 0
