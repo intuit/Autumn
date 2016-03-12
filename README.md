@@ -1,7 +1,7 @@
 # Autumn
 
-build status : master [![Build Status : master](https://travis-ci.org/jwtodd/Autumn.svg?branch=master)](https://travis-ci.org/jwtodd/Autumn)
-build status : develop [![Build Status : develop](https://travis-ci.org/jwtodd/Autumn.svg?branch=develop)](https://travis-ci.org/jwtodd/Autumn)
+master [![Build Status](https://travis-ci.org/jwtodd/Autumn.svg?branch=master)](https://travis-ci.org/jwtodd/Autumn)
+develop [![Build Status](https://travis-ci.org/jwtodd/Autumn.svg?branch=develop)](https://travis-ci.org/jwtodd/Autumn)
 
 ## Project
 
