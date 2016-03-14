@@ -35,7 +35,7 @@
         <application.http.context.path>/</application.http.context.path>
         <application.jmx.port>18080</application.jmx.port>
         <application.debug.port>15080</application.debug.port>
-        <log.dir>${application.home}/log</log.dir>
+        <log.dir>./logs</log.dir>
         <log.email.to>${application.name}@autumn.example.com</log.email.to>
         <log.email.to>${env.USER}@autumn.example.com</log.email.to>
         <metrics.csv.enabled>false</metrics.csv.enabled>
@@ -115,12 +115,12 @@
         <dependency>
             <groupId>com.google.inject</groupId>
             <artifactId>guice</artifactId>
-            <version>4.0-beta4</version>
+            <version>4.0</version>
         </dependency>
         <dependency>
             <groupId>com.google.inject.extensions</groupId>
             <artifactId>guice-multibindings</artifactId>
-            <version>4.0-beta4</version>
+            <version>4.0</version>
         </dependency>
         <dependency>
             <groupId>ch.qos.logback</groupId>

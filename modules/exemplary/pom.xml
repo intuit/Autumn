@@ -17,21 +17,17 @@
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <parent>
         <groupId>com.intuit.data.autumn</groupId>
         <artifactId>autumn</artifactId>
         <version>20160211220229-SNAPSHOT</version>
         <relativePath>../../pom.xml</relativePath>
     </parent>
-
     <artifactId>autumn.exemplary</artifactId>
     <packaging>jar</packaging>
     <name>${project.artifactId}</name>
-
     <properties>
         <sonar.skip>true</sonar.skip>
-
         <application.main>com.intuit.data.autumn.exemplary.server.Main</application.main>
         <application.daemon.enable>false</application.daemon.enable>
         <!-- todo: [jwtodd] fix/remove
@@ -53,22 +49,7 @@
         <application.ssl.keystore.password>exemplary</application.ssl.keystore.password>
         <application.ssl.keymanager.password>exemplary</application.ssl.keymanager.password>
     </properties>
-
     <dependencies>
-
-        <!-- For Jersey -->
-        <dependency>
-            <groupId>org.glassfish.jersey.containers</groupId>
-            <artifactId>jersey-container-servlet-core</artifactId>
-            <version>2.15</version>
-        </dependency>
-        <!-- For JSON -->
-        <dependency>
-            <groupId>org.glassfish.jersey.media</groupId>
-            <artifactId>jersey-media-json-jackson</artifactId>
-            <version>2.15</version>
-        </dependency>
-
         <dependency>
             <groupId>com.intuit.data.autumn</groupId>
             <artifactId>autumn.api</artifactId>
@@ -94,14 +75,25 @@
             <artifactId>autumn.web</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
+        <!--
+        <dependency>
+            <groupId>org.glassfish.jersey.containers</groupId>
+            <artifactId>jersey-container-servlet-core</artifactId>
+            <version>2.15</version>
+        </dependency>
+        <dependency>
+            <groupId>org.glassfish.jersey.media</groupId>
+            <artifactId>jersey-media-json-jackson</artifactId>
+            <version>2.15</version>
+        </dependency>
+        -->
     </dependencies>
-
     <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
-                <version>2.1</version>
+                <version>2.4.3</version>
                 <executions>
                     <execution>
                         <configuration>
@@ -148,5 +140,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
