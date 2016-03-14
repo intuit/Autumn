@@ -17,72 +17,21 @@
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <parent>
         <groupId>com.intuit.data.autumn</groupId>
         <artifactId>autumn</artifactId>
         <version>20160211220229-SNAPSHOT</version>
         <relativePath>../../pom.xml</relativePath>
     </parent>
-
     <artifactId>autumn.crypto</artifactId>
     <packaging>jar</packaging>
     <name>${project.artifactId}</name>
-
     <properties>
         <crypto.key>FIXME</crypto.key>
         <crypto.algorithm>PBEWITHSHA256AND256BITAES-CBC-BC</crypto.algorithm>
         <crypto.poolsize>4</crypto.poolsize>
         <crypto.enabled>false</crypto.enabled>
     </properties>
-
-    <profiles>
-        <profile>
-            <id>test</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <artifactId>maven-jar-plugin</artifactId>
-                        <version>2.6</version>
-                        <executions>
-                            <execution>
-                                <phase>package</phase>
-                                <goals>
-                                    <goal>jar</goal>
-                                </goals>
-                                <configuration>
-                                    <classifier>test</classifier>
-                                </configuration>
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-        <profile>
-            <id>production</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <artifactId>maven-jar-plugin</artifactId>
-                        <version>2.6</version>
-                        <executions>
-                            <execution>
-                                <phase>package</phase>
-                                <goals>
-                                    <goal>jar</goal>
-                                </goals>
-                                <configuration>
-                                    <classifier>production</classifier>
-                                </configuration>
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-    </profiles>
-
     <dependencies>
         <dependency>
             <groupId>org.bouncycastle</groupId>
@@ -100,5 +49,4 @@
             <version>${project.parent.version}</version>
         </dependency>
     </dependencies>
-
 </project>

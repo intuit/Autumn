@@ -40,40 +40,18 @@
         <dependency>
             <groupId>org.eclipse.jetty</groupId>
             <artifactId>jetty-server</artifactId>
-            <version>9.1.5.v20140505</version>
+            <version>9.3.7.v20160115</version>
         </dependency>
         <dependency>
             <groupId>org.eclipse.jetty</groupId>
             <artifactId>jetty-servlet</artifactId>
-            <version>9.1.5.v20140505</version>
+            <version>9.3.7.v20160115</version>
         </dependency>
         <dependency>
             <groupId>org.eclipse.jetty</groupId>
             <artifactId>jetty-servlets</artifactId>
-            <version>9.1.5.v20140505</version>
+            <version>9.3.7.v20160115</version>
         </dependency>
-        <!--
-        <dependency>
-            <groupId>org.eclipse.jetty</groupId>
-            <artifactId>jetty-distribution</artifactId>
-            <version>9.1.5.v20140505</version>
-            <exclusions>
-                <exclusion>
-                    <artifactId>test-jetty-webapp</artifactId>
-                    <groupId>org.eclipse.jetty</groupId>
-                </exclusion>
-                <exclusion>
-                    <artifactId>test-proxy-webapp</artifactId>
-                    <groupId>org.eclipse.jetty</groupId>
-                </exclusion>
-                <exclusion>
-                    <artifactId>asm</artifactId>
-                    <groupId>org.ow2.asm</groupId>
-                </exclusion>
-            </exclusions>
-            <type>zip</type>
-        </dependency>
-        -->
         <dependency>
             <groupId>com.sun.jersey</groupId>
             <artifactId>jersey-core</artifactId>
@@ -109,28 +87,6 @@
             <artifactId>jackson-module-jaxb-annotations</artifactId>
             <version>2.7.2</version>
         </dependency>
-        <!--
-        <dependency>
-            <groupId>org.codehaus.jackson</groupId>
-            <artifactId>jackson-core-asl</artifactId>
-            <version>1.9.13</version>
-        </dependency>
-        <dependency>
-            <groupId>org.codehaus.jackson</groupId>
-            <artifactId>jackson-mapper-asl</artifactId>
-            <version>1.9.13</version>
-        </dependency>
-        <dependency>
-            <groupId>org.codehaus.jackson</groupId>
-            <artifactId>jackson-jaxrs</artifactId>
-            <version>1.9.13</version>
-        </dependency>
-        <dependency>
-            <groupId>org.codehaus.jackson</groupId>
-            <artifactId>jackson-xc</artifactId>
-            <version>1.9.13</version>
-        </dependency>
-        -->
         <dependency>
             <groupId>com.google.inject.extensions</groupId>
             <artifactId>guice-servlet</artifactId>
