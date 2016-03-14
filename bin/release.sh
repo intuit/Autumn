@@ -16,11 +16,22 @@
 # limitations under the License.
 #
 
-version=`date -u "+%Y%m%d%H%M%S"`
+fromPom() {
+  case $# in
+    2) mvn -f $1/pom.xml help:evaluate -Dexpression=$2 | sed -n -e '/^\[.*\]/ !{ p; }';;
+    3) mvn -f $1/pom.xml help:evaluate -Dexpression=$2 | sed -n -e '/^\[.*\]/ !{ p; }' | \
+         python -c "import xml.etree.ElementTree as ET; import sys; field = ET.parse(sys.stdin).getroot().find(\"$3\"); print (field.text if field != None else '')"
+  esac
+}
+
+application_version=$(fromPom . project.properties application.version)
+build_version=`date -u "+%Y%m%d%H%M%S"`
+version=${application_version}.${build_version}
 
 echo "milestone version: $version"
 
 cp ./build/git/hooks/* .git/hooks
 
+exit
 git flow release start -F $version
 git flow release finish -m "milestone: $version" -p -D $version

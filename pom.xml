@@ -26,6 +26,7 @@
     <name>${project.artifactId}</name>
     <properties>
         <application.name>${project.artifactId}-${project.version}-${application.profile}</application.name>
+        <application.version>1.0</application.version>
         <application.home>./${application.name}</application.home>
         <!-- todo: ?vary usr/grp per module -->
         <application.user>${project.artifactId}-${application.profile}</application.user>
