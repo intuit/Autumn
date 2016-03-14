@@ -20,7 +20,7 @@
     <parent>
         <groupId>com.intuit.data.autumn</groupId>
         <artifactId>autumn</artifactId>
-        <version>20160314092833-SNAPSHOT</version>
+        <version>20160314093350</version>
         <relativePath>../../pom.xml</relativePath>
     </parent>
     <artifactId>autumn.crypto</artifactId>
