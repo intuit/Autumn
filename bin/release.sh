@@ -32,6 +32,5 @@ echo "milestone version: $version"
 
 cp ./build/git/hooks/* .git/hooks
 
-exit
 git flow release start -F $version
 git flow release finish -m "milestone: $version" -p -D $version
