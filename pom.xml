@@ -61,7 +61,6 @@
             </activation>
             <properties>
                 <application.profile>development</application.profile>
-                <application.home>./${project.artifactId}</application.home>
                 <metrics.graphite.enabled>false</metrics.graphite.enabled>
                 <metrics.graphite.service>graphite://graphite.autumn.example.com:2003</metrics.graphite.service>
                 <metrics.graphite.service.prefix>${application.name}-${env.USER}</metrics.graphite.service.prefix>
@@ -71,7 +70,7 @@
             <id>test</id>
             <properties>
                 <application.profile>test</application.profile>
-                <application.home>/usr/local/${project.artifactId}</application.home>
+                <application.home>/usr/local/${application.name}</application.home>
                 <application.http.port>9080</application.http.port>
                 <application.jmx.port>19080</application.jmx.port>
                 <application.debug.port>16080</application.debug.port>
@@ -83,9 +82,9 @@
             <id>production</id>
             <properties>
                 <application.profile>production</application.profile>
-                <application.home>/usr/local/${project.artifactId}</application.home>
+                <application.home>/usr/local/${application.name}</application.home>
                 <log.dir>/var/log/${application.name}/logs</log.dir>
-                <log.email.to>${application.name}@autumn.example.com</log.email.to>
+                <log.email.to>${application.name}@${project.name}.example.com</log.email.to>
                 <metrics.graphite.enabled>false</metrics.graphite.enabled>
                 <metrics.graphite.service>graphite://graphite.autumn.example.com:2003</metrics.graphite.service>
                 <metrics.graphite.service.prefix>${application.name}</metrics.graphite.service.prefix>
