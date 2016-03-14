@@ -24,6 +24,7 @@
     <version>20160211220229-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>${project.artifactId}</name>
+
     <properties>
         <application.name>${project.artifactId}-${project.version}-${application.profile}</application.name>
         <application.home>./${application.name}</application.home>
@@ -46,10 +47,12 @@
         <metrics.graphite.interval.seconds>30</metrics.graphite.interval.seconds>
         <metrics.hystrix.enabled>false</metrics.hystrix.enabled>
         <metrics.jmx.enabled>false</metrics.jmx.enabled>
+
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <maven.build.timestamp.format>yyyyMMdd-HHmm</maven.build.timestamp.format>
     </properties>
+
     <profiles>
         <profile>
             <id>development</id>

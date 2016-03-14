@@ -40,17 +40,23 @@
         <dependency>
             <groupId>org.eclipse.jetty</groupId>
             <artifactId>jetty-server</artifactId>
-            <version>9.3.7.v20160115</version>
+            <version>9.1.5.v20140505</version>
+            <!-- FIXME: jdk8 -->
+            <!--<version>9.3.7.v20160115</version>-->
         </dependency>
         <dependency>
             <groupId>org.eclipse.jetty</groupId>
             <artifactId>jetty-servlet</artifactId>
-            <version>9.3.7.v20160115</version>
+            <version>9.1.5.v20140505</version>
+            <!-- FIXME: jdk8 -->
+            <!--<version>9.3.7.v20160115</version>-->
         </dependency>
         <dependency>
             <groupId>org.eclipse.jetty</groupId>
             <artifactId>jetty-servlets</artifactId>
-            <version>9.3.7.v20160115</version>
+            <version>9.1.5.v20140505</version>
+            <!-- FIXME: jdk8 -->
+            <!--<version>9.3.7.v20160115</version>-->
         </dependency>
         <dependency>
             <groupId>com.sun.jersey</groupId>
