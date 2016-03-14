@@ -1,0 +1,162 @@
+<!--
+ Copyright 2016 Intuit
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.intuit.data.autumn</groupId>
+        <artifactId>autumn</artifactId>
+        <version>20160314092833</version>
+        <relativePath>../../pom.xml</relativePath>
+    </parent>
+    <artifactId>autumn.exemplary</artifactId>
+    <packaging>jar</packaging>
+    <name>${project.artifactId}</name>
+    <properties>
+        <sonar.skip>true</sonar.skip>
+        <application.main>com.intuit.data.autumn.exemplary.server.Main</application.main>
+        <application.daemon.enable>false</application.daemon.enable>
+        <!-- todo: [jwtodd] fix/remove
+        <application.daemon.enable>true</application.daemon.enable>
+        <application.dependencies>jdk-1.7.0_51-fcs</application.dependencies>
+        <application.daemon.dependencies>runit</application.daemon.dependencies>
+        -->
+        <application.http.enabled>true</application.http.enabled>
+        <application.http.port>8080</application.http.port>
+        <application.http.context.path>/foo</application.http.context.path>
+        <application.jersey.provider.path>com.intuit.data.autumn.exemplary.server</application.jersey.provider.path>
+
+        <application.https.enabled>false</application.https.enabled>
+        <application.https.port>8443</application.https.port>
+        <application.http.idletimeout>30000</application.http.idletimeout>
+        <application.https.idletimeout>500000</application.https.idletimeout>
+        <application.httpconfig.output.buffersize>32768</application.httpconfig.output.buffersize>
+        <application.ssl.keystore.path>./src/test/resources/autumn-keystore</application.ssl.keystore.path>
+        <application.ssl.keystore.password>exemplary</application.ssl.keystore.password>
+        <application.ssl.keymanager.password>exemplary</application.ssl.keymanager.password>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>com.intuit.data.autumn</groupId>
+            <artifactId>autumn.api</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.intuit.data.autumn</groupId>
+            <artifactId>autumn.service</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.intuit.data.autumn</groupId>
+            <artifactId>autumn.client</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.intuit.data.autumn</groupId>
+            <artifactId>autumn.metrics</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.intuit.data.autumn</groupId>
+            <artifactId>autumn.web</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>2.7</version>
+                <configuration>
+                    <escapeString>\</escapeString>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>copy-resources</id>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${basedir}/target/extra-resources</outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>src/main/env</directory>
+                                    <filtering>true</filtering>
+                                </resource>
+                                <resource>
+                                    <directory>src/test/integration</directory>
+                                    <filtering>true</filtering>
+                                </resource>
+                            </resources>
+                            <includeEmptyDirs>true</includeEmptyDirs>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>2.4.3</version>
+                <executions>
+                    <execution>
+                        <configuration>
+                            <shadedArtifactAttached>true</shadedArtifactAttached>
+                            <createSourcesJar>true</createSourcesJar>
+                            <shadedClassifierName>${application.profile}-all</shadedClassifierName>
+                            <createDependencyReducedPom>true</createDependencyReducedPom>
+                            <promoteTransitiveDependencies>true</promoteTransitiveDependencies>
+                            <artifactSet>
+                                <excludes>
+                                    <exclude>junit:*</exclude>
+                                    <exclude>org.hamcrest:*</exclude>
+                                    <exclude>org.mockito:*</exclude>
+                                    <exclude>org.objenesis:*</exclude>
+                                </excludes>
+                            </artifactSet>
+                            <filters>
+                                <filter>
+                                    <artifact>*:*</artifact>
+                                    <excludes>
+                                        <exclude>META-INF/LICENSE</exclude>
+                                        <exclude>META-INF/license</exclude>
+                                        <exclude>META-INF/*.SF</exclude>
+                                        <exclude>META-INF/*.DSA</exclude>
+                                        <exclude>META-INF/*.RSA</exclude>
+                                    </excludes>
+                                </filter>
+                            </filters>
+                            <transformers>
+                                <transformer
+                                        implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                    <mainClass>${application.main}</mainClass>
+                                </transformer>
+                                <transformer
+                                        implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
+                            </transformers>
+                        </configuration>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>
