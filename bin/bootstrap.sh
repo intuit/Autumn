@@ -30,6 +30,7 @@ aws_formulas=("awscli")
 package_formulas=("rpm")
 repository_formulas=("git" "git-flow-avh" "hub")
 build_formulas=("maven" "gradle")
+language_formulas=("ruby" "python")
 language_casks=("java" "caskroom/versions/java7")
 container_formulas=("docker" "docker-compose" "docker-machine" "docker-swarm" "boot2docker")
 container_casks=("virtualbox" "dockertoolbox")
@@ -66,4 +67,5 @@ for vagrant_plugin in "${vagrant_plugins[@]}"; do
   echo "$beers : vagranted plugin: $vagrant_plugin"
 done
 
+gem install travis
 gem install fpm
