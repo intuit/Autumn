@@ -36,8 +36,7 @@ article for more details about how to contribute.
 
 *   % /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 *   % for f in "git git-flow-avh maven"; do brew install $f; fi
-*   # note: jdk7 required until all clients upgrade to jdk8
-*   % for c in "java7"; do brew cask install $c; fi
+*   % for c in "java"; do brew cask install $c; fi
 
 ### Build
 
