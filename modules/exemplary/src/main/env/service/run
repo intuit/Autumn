@@ -37,7 +37,7 @@ JAVA_OPTIONS="-server -Xmx${application.heapsize}\
   -Dcom.sun.management.jmxremote.ssl=false\
   -Dcom.sun.management.jmxremote.authenticate=false\
   -Dlogback.configurationFile=\${HOME}/conf/logback.xml"
-export JAVA_HOME=\${JAVA_HOME:-/usr/java/latest}
+export JAVA_HOME=\${JAVA_HOME:-/usr/java/default}
 
 if [ \$DAEMON = "true" ]; then
   run_as="chpst -u ${application.user}:${application.group}"
