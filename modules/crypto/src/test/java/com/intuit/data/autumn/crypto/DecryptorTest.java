@@ -41,11 +41,11 @@ public class DecryptorTest {
 
     @Test
     public void testDecryptNullValue() {
-        assertThat(decryptor.decrypt("V001", null), is(nullValue()));
+        assertThat(decryptor.decrypt("decryption.version.number.1", null), is(nullValue()));
     }
 
     @Test
     public void testEncrypt() {
-        assertThat(decryptor.decrypt("V001", testMessage), is(testMessage));
+        assertThat(decryptor.decrypt("decryption.version.number.1", testMessage), is(testMessage));
     }
 }

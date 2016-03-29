@@ -31,6 +31,7 @@
         <crypto.algorithm>PBEWITHSHA256AND256BITAES-CBC-BC</crypto.algorithm>
         <crypto.poolsize>4</crypto.poolsize>
         <crypto.enabled>false</crypto.enabled>
+        <decryption.version.number.1>decryption.version.number.1</decryption.version.number.1>
     </properties>
     <dependencies>
         <dependency>
