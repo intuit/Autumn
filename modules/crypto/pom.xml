@@ -20,7 +20,7 @@
     <parent>
         <groupId>com.intuit.data.autumn</groupId>
         <artifactId>autumn</artifactId>
-        <version>1.0.20160325220949</version>
+        <version>1.0.20160330191615</version>
         <relativePath>../../pom.xml</relativePath>
     </parent>
     <artifactId>autumn.crypto</artifactId>
@@ -31,6 +31,7 @@
         <crypto.algorithm>PBEWITHSHA256AND256BITAES-CBC-BC</crypto.algorithm>
         <crypto.poolsize>4</crypto.poolsize>
         <crypto.enabled>false</crypto.enabled>
+        <decryption.version.number.1>decryption.version.number.1</decryption.version.number.1>
     </properties>
     <dependencies>
         <dependency>

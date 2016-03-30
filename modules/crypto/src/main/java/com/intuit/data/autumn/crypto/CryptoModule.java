@@ -18,6 +18,7 @@ package com.intuit.data.autumn.crypto;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.Singleton;
+import com.google.inject.multibindings.MapBinder;
 
 import java.util.Properties;
 
@@ -27,13 +28,14 @@ import static com.intuit.data.autumn.utils.PropertyFactory.getProperty;
 import static java.lang.Boolean.TRUE;
 
 /**
- * An injector that includes Cryptography implemetnation details.
+ * An injector that includes Cryptography implementation details.
  */
 
 public class CryptoModule extends AbstractModule {
 
     public static final String PROPERTY_NAME = "/crypto.properties";
     public static final String SECRETS_PROPERTY_NAME = "/crypto-secrets.properties";
+    public static final String DECRYPTION_KEYS_PROPERTY_NAME = "/decryption-keys.properties";
 
     /**
      * Install module dependencies.
@@ -43,6 +45,8 @@ public class CryptoModule extends AbstractModule {
     protected void configure() {
         Properties properties = create(PROPERTY_NAME, CryptoModule.class);
         Properties secretProperties = create(SECRETS_PROPERTY_NAME, CryptoModule.class);
+        Properties decryptionProperties = create(DECRYPTION_KEYS_PROPERTY_NAME, CryptoModule.class);
+
         boolean cryptoEnabled = Boolean.valueOf(getProperty("crypto.enabled", properties, TRUE.toString()));
 
         bind(String.class).annotatedWith(named("crypto.key"))
@@ -52,5 +56,20 @@ public class CryptoModule extends AbstractModule {
         bind(Integer.class).annotatedWith(named("crypto.poolsize"))
                 .toInstance(Integer.valueOf(getProperty("crypto.poolsize", properties)));
         bind(Encryptor.class).to(cryptoEnabled ? AlgorithmEncryptor.class : NoopEncryptor.class).in(Singleton.class);
+
+        MapBinder<String, Encryptor> mapBinder
+                = MapBinder.newMapBinder(binder(), String.class, Encryptor.class);
+
+        for (String version : decryptionProperties.stringPropertyNames()) {
+            Encryptor encryptor;
+            if (cryptoEnabled) {
+                encryptor = new AlgorithmEncryptor(decryptionProperties.getProperty(version),
+                        getProperty("crypto.algorithm", secretProperties),
+                        Integer.valueOf(getProperty("crypto.poolsize", properties)));
+            } else {
+                encryptor = new NoopEncryptor();
+            }
+            mapBinder.addBinding(version).toInstance(encryptor);
+        }
     }
 }
