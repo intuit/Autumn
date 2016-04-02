@@ -22,6 +22,7 @@ import com.codahale.metrics.Timer;
 import com.google.common.base.Joiner;
 import com.google.inject.Inject;
 import com.intuit.data.autumn.exemplary.data.Ping;
+import com.intuit.data.autumn.web.HttpHeader;
 import org.slf4j.Logger;
 
 import javax.ws.rs.*;
@@ -48,6 +49,7 @@ import static org.slf4j.LoggerFactory.getLogger;
 public class PingService {
 
     private static final Joiner JOINER = on(",");
+    private final HttpHeader httpHeader;
     private final Counter getPingCounter;
     private final Timer getPingTimer;
     private final Counter postPingCounter;
@@ -62,7 +64,8 @@ public class PingService {
      */
 
     @Inject
-    public PingService(MetricRegistry metricRegistry) {
+    public PingService(final HttpHeader httpHeader, final MetricRegistry metricRegistry) {
+        this.httpHeader = httpHeader;
         getPingCounter = metricRegistry.counter("get-ping-counter");
         getPingTimer = metricRegistry.timer("get-ping-timer");
         postPingCounter = metricRegistry.counter("post-ping-counter");
@@ -81,7 +84,7 @@ public class PingService {
     @GET
     @Path("/ping/{id}")
     @Produces(APPLICATION_JSON)
-    public Ping ping(@PathParam("id") String id) throws Exception {
+    public Response ping(@PathParam("id") String id) throws Exception {
         getPingCounter.inc();
         LOGGER.debug("getting ping id: {}, count: {}", id, getPingCounter.getCount());
 
@@ -98,7 +101,7 @@ public class PingService {
 
         LOGGER.debug("got ping id: {}, count: {}, ping: {}", new Object[]{id, getPingCounter.getCount(), ping});
 
-        return ping;
+        return httpHeader.headers().entity(ping).build();
     }
 
     /**
@@ -120,7 +123,7 @@ public class PingService {
 
         LOGGER.debug("posted ping: {}, count: {}, pong: {}", new Object[]{ping, postPingCounter.getCount(), pong});
 
-        return status(OK).entity(pong).build();
+        return httpHeader.headers().entity(pong).build();
     }
 
     /**
@@ -133,7 +136,7 @@ public class PingService {
     @GET
     @Path("/pings")
     @Produces(APPLICATION_JSON)
-    public List<Ping> pings() throws Exception {
+    public Response pings() throws Exception {
         getPingsCounter.inc();
         LOGGER.debug("getting pings count: {}", getPingsCounter.getCount());
 
@@ -151,6 +154,6 @@ public class PingService {
 
         LOGGER.debug("got pings count: {}, pong: {}", getPingsCounter.getCount(), JOINER.join(pings));
 
-        return pings;
+        return httpHeader.headers().entity(pings).build();
     }
 }

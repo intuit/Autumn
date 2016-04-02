@@ -89,8 +89,9 @@ public class WebModule extends AbstractModule {
                 toInstance(isHttpsOn ? String.valueOf(getProperty(
                         "application.ssl.keymanager.password", secretsProperties)) : "");
 
-        bind(HttpsService.class).in(SINGLETON);
+        bind(HttpHeader.class).in(SINGLETON);
         bind(HttpService.class).in(SINGLETON);
+        bind(HttpsService.class).in(SINGLETON);
 
         LOGGER.debug("bound properties: {}", PROPERTY_NAME);
     }
