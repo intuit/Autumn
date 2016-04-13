@@ -65,7 +65,7 @@ curl
 
 ## Future Considerations
 
-*  upgrade to jdk8 (note: jdk7 required until all clients upgrade to jdk8)
+*  --tbd--
 
 ## License
 
