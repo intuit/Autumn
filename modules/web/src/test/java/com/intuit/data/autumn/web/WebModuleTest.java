@@ -47,8 +47,6 @@ public class WebModuleTest {
         }), equalTo(tryParse(properties.getProperty("application.http.port"))));
         assertThat(injector.getInstance(new Key<Integer>(named("application.https.port")) {
         }), equalTo(tryParse(properties.getProperty("application.https.port"))));
-        assertThat(injector.getInstance(new Key<Integer>(named("application.http.idletimeout")) {
-        }), equalTo(tryParse(properties.getProperty("application.http.idletimeout"))));
         assertThat(injector.getInstance(new Key<Integer>(named("application.httpconfig.output.buffersize")) {
         }), equalTo(tryParse(properties.getProperty("application.httpconfig.output.buffersize"))));
         assertThat(injector.getInstance(new Key<Integer>(named("application.https.idletimeout")) {
@@ -90,8 +88,6 @@ public class WebModuleTest {
 
         assertThat(injector.getInstance(new Key<Integer>(named("application.https.port")) {
         }), equalTo(tryParse(properties.getProperty("application.https.port"))));
-        assertThat(injector.getInstance(new Key<Integer>(named("application.http.idletimeout")) {
-        }), equalTo(tryParse(properties.getProperty("application.http.idletimeout"))));
         assertThat(injector.getInstance(new Key<Integer>(named("application.httpconfig.output.buffersize")) {
         }), equalTo(tryParse(properties.getProperty("application.httpconfig.output.buffersize"))));
         assertThat(injector.getInstance(new Key<Integer>(named("application.https.idletimeout")) {
