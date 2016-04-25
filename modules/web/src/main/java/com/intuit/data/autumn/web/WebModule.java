@@ -68,9 +68,6 @@ public class WebModule extends AbstractModule {
         bind(Integer.class).annotatedWith(named("application.https.port"))
                 .toInstance(isHttpsOn ? Integer.parseInt(getProperty(
                         "application.https.port", properties)) : -1);
-        bind(Integer.class).annotatedWith(named("application.http.idletimeout"))
-                .toInstance(isHttpsOn ? Integer.parseInt(getProperty(
-                        "application.http.idletimeout", properties)) : -1);
         bind(Integer.class).annotatedWith(
                 named("application.httpconfig.output.buffersize"))
                 .toInstance(isHttpsOn ? Integer.parseInt(getProperty(

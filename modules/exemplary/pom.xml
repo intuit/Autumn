@@ -38,11 +38,14 @@
         <application.http.enabled>true</application.http.enabled>
         <application.http.port>8080</application.http.port>
         <application.http.context.path>/foo</application.http.context.path>
-        <application.jersey.provider.path>com.intuit.data.autumn.exemplary.server</application.jersey.provider.path>
+        <application.jersey.provider.paths>com.intuit.data.autumn.exemplary.server</application.jersey.provider.paths>
+        <application.jersey.pojo.enabled>true</application.jersey.pojo.enabled>
+        <application.jersey.request.filters/>
+        <application.jersey.response.filters/>
+        <application.jersey.wadl.enabled>false</application.jersey.wadl.enabled>
 
         <application.https.enabled>false</application.https.enabled>
         <application.https.port>8443</application.https.port>
-        <application.http.idletimeout>30000</application.http.idletimeout>
         <application.https.idletimeout>500000</application.https.idletimeout>
         <application.httpconfig.output.buffersize>32768</application.httpconfig.output.buffersize>
         <application.ssl.keystore.path>./src/test/resources/autumn-keystore</application.ssl.keystore.path>
