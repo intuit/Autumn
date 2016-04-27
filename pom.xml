@@ -21,7 +21,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.intuit.data.autumn</groupId>
     <artifactId>autumn</artifactId>
-    <version>1.0.20160425215310</version>
+    <version>1.0.20160427190811</version>
     <packaging>pom</packaging>
     <name>${project.artifactId}</name>
     <properties>
@@ -33,6 +33,7 @@
         <application.group>${project.artifactId}-${application.profile}</application.group>
         <application.http.port>8080</application.http.port>
         <application.http.context.path>/</application.http.context.path>
+        <application.http.content.directory>${application.home}/content</application.http.content.directory>
         <application.jmx.port>18080</application.jmx.port>
         <application.debug.port>15080</application.debug.port>
         <log.dir>./logs</log.dir>

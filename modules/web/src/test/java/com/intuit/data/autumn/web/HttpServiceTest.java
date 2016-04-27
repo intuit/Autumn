@@ -50,7 +50,7 @@ public class HttpServiceTest {
 
     @Test
     public void instantiatable() throws Exception {
-        new HttpService(8080, "/", guiceFilter);
+        new HttpService(8080, "/", null, guiceFilter);
     }
 
     @Test
@@ -62,7 +62,7 @@ public class HttpServiceTest {
         server.start();
         replay(server, Server.class);
 
-        HttpService httpService = new HttpService(port, "/", guiceFilter);
+        HttpService httpService = new HttpService(port, "/", null, guiceFilter);
 
         httpService.startUp();
 
@@ -78,7 +78,7 @@ public class HttpServiceTest {
         server.start();
         replay(server, Server.class);
 
-        HttpService httpService = new HttpService(port, "", guiceFilter);
+        HttpService httpService = new HttpService(port, "", null, guiceFilter);
 
         httpService.startUp();
 
@@ -90,7 +90,7 @@ public class HttpServiceTest {
         int port = 8080;
         Server server = createMock(Server.class, port);
 
-        HttpService httpService = new HttpService(port, "", guiceFilter);
+        HttpService httpService = new HttpService(port, null, null, guiceFilter);
 
         setInternalState(httpService, "server", server);
         replay(server, Server.class);
@@ -105,7 +105,7 @@ public class HttpServiceTest {
         int port = 8080;
         Server server = createMockAndExpectNew(Server.class, port);
 
-        HttpService httpService = new HttpService(port, "", guiceFilter);
+        HttpService httpService = new HttpService(port, "", null, guiceFilter);
 
         setInternalState(server, "_lock", new Object());
         setInternalState(httpService, "server", server);
@@ -122,7 +122,7 @@ public class HttpServiceTest {
         int port = 8080;
         Server server = createMock(Server.class, port);
 
-        HttpService httpService = new HttpService(port, "", guiceFilter);
+        HttpService httpService = new HttpService(port, "", null, guiceFilter);
 
         replay(server, Server.class);
 
