@@ -24,9 +24,9 @@ import java.util.Properties;
 
 import static com.google.inject.Scopes.SINGLETON;
 import static com.google.inject.name.Names.named;
-import static java.lang.Integer.valueOf;
 import static com.intuit.data.autumn.utils.PropertyFactory.create;
 import static com.intuit.data.autumn.utils.PropertyFactory.getProperty;
+import static java.lang.Integer.valueOf;
 import static org.slf4j.LoggerFactory.getLogger;
 
 /**
@@ -58,6 +58,9 @@ public class WebModule extends AbstractModule {
         bind(String.class).annotatedWith(named("application.http.context.path"))
                 .toInstance(String.valueOf(getProperty(
                         "application.http.context.path", properties)));
+        bind(String.class).annotatedWith(named("application.http.content.directory"))
+                .toInstance(String.valueOf(getProperty(
+                        "application.http.content.directory", properties)));
 
         Boolean isHttpsOn = Boolean.valueOf(getProperty("application.https.enabled",
                 properties, "false"));

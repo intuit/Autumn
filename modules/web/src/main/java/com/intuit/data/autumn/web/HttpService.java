@@ -28,11 +28,13 @@ import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.server.handler.ContextHandlerCollection;
 import org.eclipse.jetty.server.handler.HandlerCollection;
 import org.eclipse.jetty.server.handler.RequestLogHandler;
+import org.eclipse.jetty.server.handler.ResourceHandler;
 import org.eclipse.jetty.servlet.FilterHolder;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHolder;
 import org.slf4j.Logger;
 
+import javax.annotation.Nullable;
 import javax.servlet.DispatcherType;
 import java.io.IOException;
 import java.io.InputStream;
@@ -47,36 +49,48 @@ import static org.slf4j.LoggerFactory.getLogger;
 
 public class HttpService extends AbstractIdleService {
 
+    private static final Logger LOGGER = getLogger(HttpService.class);
     private final int httpPort;
-
     private final String contextPath;
     private final GuiceFilter guiceFilter;
+    @Nullable
+    private final String contentDirectory;
     private Server server;
-    private static final Logger LOGGER = getLogger(HttpService.class);
 
     /**
-     *
-     * @param httpPort
+     * @param port
      * @param contextPath
      * @param guiceFilter
      */
 
     @Inject
     public HttpService(
-            @Named("application.http.port") int httpPort,
+            @Named("application.http.port") int port,
             @Named("application.http.context.path") String contextPath,
+            @Named("application.http.content.directory") @Nullable String contentDirectory,
             GuiceFilter guiceFilter) {
-        LOGGER.debug("instantiating {} with httpPort: {}", new Object[]{serviceName(), httpPort});
+        LOGGER.debug("instantiating {} with httpPort: {}, contextPath: {}, contentDirectory: {}",
+                new Object[]{serviceName(), port, contextPath, contentDirectory});
 
-        this.httpPort = httpPort;
+        this.httpPort = port;
         this.contextPath = isEmpty(contextPath) ? "/" : contextPath;
+        this.contentDirectory = contentDirectory;
         this.guiceFilter = guiceFilter;
 
-        LOGGER.debug("instantiated {} with httpPort: {}", new Object[]{serviceName(), httpPort});
+        LOGGER.debug("instantiated {} with httpPort: {}", new Object[]{serviceName(), port});
+    }
+
+    private static ResourceHandler makeContentHandler(String contentDirectory) {
+        ResourceHandler resourceHandler = new ResourceHandler();
+
+        resourceHandler.setDirectoriesListed(true);
+        resourceHandler.setWelcomeFiles(new String[]{"index.html"});
+        resourceHandler.setResourceBase(contentDirectory);
+
+        return resourceHandler;
     }
 
     /**
-     *
      * @throws Exception
      */
 
@@ -94,6 +108,11 @@ public class HttpService extends AbstractIdleService {
         HandlerCollection handlers = new HandlerCollection(false);
 
         handlers.addHandler(makeMonitorHandler());
+
+        if (contentDirectory != null) {
+            handlers.addHandler(makeContentHandler(contentDirectory));
+        }
+
         handlers.addHandler(makeContextHandler(guiceFilter));
         handlers.addHandler(makeRequestLogHandler());
         server.setHandler(handlers);
@@ -151,7 +170,6 @@ public class HttpService extends AbstractIdleService {
     }
 
     /**
-     *
      * @throws Exception
      */
 
