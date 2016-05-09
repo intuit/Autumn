@@ -6,3 +6,4 @@ branches:
     - /^(?i:feature)/.*$/
     - develop
     - master
+
