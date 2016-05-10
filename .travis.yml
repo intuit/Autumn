@@ -2,17 +2,15 @@ language: java
 jdk:
   - oraclejdk8
 
-#install:
-#  - mvn --settings settings.xml install -DskipTests=true -Dmaven.javadoc.skip=true -B -V -x
+install: 'mvn --settings settings.xml install -DskipTests=true -Dmaven.javadoc.skip=true -B -V -X'
 
 before_install:
   - echo $GPG_SECRET_KEYS | base64 --decode | $GPG_EXECUTABLE --import
   - echo $GPG_OWNERTRUST | base64 --decode | $GPG_EXECUTABLE --import-ownertrust
 
-#deploy:
-#  - mvn clean deploy --settings settings.xml -DskipTests=true -B -U -x
-script: '[ ${TRAVIS_PULL_REQUEST} = ''false'' ] && mvn clean deploy -e --settings
-  target/travis/settings.xml || mvn clean verify -e --settings target/travis/settings.xml'
+deploy: 'mvn clean deploy --settings settings.xml -DskipTests=true -B -U -X'
+#script: '[ ${TRAVIS_PULL_REQUEST} = ''false'' ] && mvn clean deploy -e --settings
+#  target/travis/settings.xml || mvn clean verify -e --settings target/travis/settings.xml'
 
 branches:
   only:
