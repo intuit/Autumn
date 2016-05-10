@@ -24,6 +24,8 @@
     <version>1.0.20160427190811-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>${project.artifactId}</name>
+    <url>https://github.com/intuit/Autumn</url>
+    <description>This project is a collection of common/popular libraries brought together via low cohesion means allowing for rapid creation of modern Java applications brought about by judiciously adhering to near-zero component cohesion.</description>
     <properties>
         <application.name>${project.artifactId}-${application.profile}-${project.version}</application.name>
         <application.version>1.0</application.version>
@@ -372,4 +374,19 @@
             </resource>
         </resources>
     </build>
+    <developers>
+        <developer>
+            <id>jt</id>
+            <name>James Todd</name>
+            <email>james@intuit.com</email>
+            <url>http://www.intuit.com</url>
+        </developer>
+    </developers>
+    <licenses>
+        <license>
+            <name>Apache</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
 </project>
