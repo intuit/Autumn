@@ -13,7 +13,7 @@ develop [![Build Status](https://travis-ci.org/jwtodd/Autumn.svg?branch=develop)
 
 ####What
 
-  Autumn is a collection of ready-to-use-as-is base implementations that solve the above thereby freeing up application concerns to focus on it’s principle value proposition. Autumn is used by a number of Intuit/IDEA initiatives, namely: **redacted**
+  Autumn is a collection of ready-to-use-as-is base implementations that solve the above thereby freeing up application concerns to focus on it’s principle value proposition. Autumn is used by a number of Intuit/IDEA initiatives, namely: ABTesting, ClickStream Ingress, etc.
 
   Autumn can be viewed as the artifact of disciplined engineering rigor. Stabilizing the provided resources with concrete and readily consumable components yet readily enabling implementation to vary over time without requiring complete/large-scale application re-writes/overhauls thereby allowing applications organization wide to keep pace with current state offerings, innovate more rapidly via selective leverage, etc.
 
