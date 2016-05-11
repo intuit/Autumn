@@ -7,12 +7,21 @@ develop [![Build Status](https://travis-ci.org/jwtodd/Autumn.svg?branch=develop)
 
 ## Project
 
-This project is a collection of common/popular libraries brought together via low cohesion means allowing for
-rapid creation of modern Java applications brought about by judiciously adhering to near-zero component cohesion.
-As such, expected commodity elements are readily available via any number of configurations yet while at the same
-time entirely new subsystems can and will be added over time with little overall disruption. Further, every element
-can and should be considered as an operational peer to any other element, realizing the principle of
-[Separation of concerns](https://en.wikipedia.org/wiki/Separation_of_concerns).
+![Autumn](misc/autumn.png)
+
+####Why
+
+  Contemporary API services built to scale are largely comprised of a sizable amount of common concerns, examples being secure service endpoints, request integrity validation, application logic delegation, durable persistence, operational concerns such as auditing and logging, etc.
+
+####What
+
+  Autumn is a collection of ready-to-use-as-is base implementations that solve the above thereby freeing up application concerns to focus on it’s principle value proposition. Autumn is used by a number of Intuit/IDEA initiatives, namely: **redacted**
+
+  Autumn can be viewed as the artifact of disciplined engineering rigor. Stabilizing the provided resources with concrete and readily consumable components yet readily enabling implementation to vary over time without requiring complete/large-scale application re-writes/overhauls thereby allowing applications organization wide to keep pace with current state offerings, innovate more rapidly via selective leverage, etc.
+
+####How
+
+  Autumn is a contemporary collection of readily consumable state-of-the-art Java libraries that satisfies micro-service principle concerns, namely: protocols, observability, manageability, separation of concerns, injectability (IoC), component lifecycle management, and discreet testability.
 
 ## Getting involved
 
