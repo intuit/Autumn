@@ -7,7 +7,7 @@ develop [![Build Status](https://travis-ci.org/jwtodd/Autumn.svg?branch=develop)
 
 ## Project
 
-![Autumn](misc/autumn.png)
+![Autumn](misc/autumn_sm.png)
 
 ####Why
 
