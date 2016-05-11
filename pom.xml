@@ -27,7 +27,7 @@
     <url>https://github.com/intuit/Autumn</url>
     <description>This project is a collection of common/popular libraries brought together via low cohesion means allowing for rapid creation of modern Java applications brought about by judiciously adhering to near-zero component cohesion.</description>
     <properties>
-        <application.name>${project.artifactId}-${application.profile}-${project.version}</application.name>
+        <application.name>${project.artifactId}-${project.version}-${application.profile}</application.name>
         <application.version>1.0</application.version>
         <application.home>./${application.name}</application.home>
         <!-- todo: ?vary usr/grp per module -->
