@@ -8,7 +8,7 @@ develop [![Build Status](https://travis-ci.org/jwtodd/Autumn.svg?branch=develop)
 ## Project
 
 <!--![Autumn](misc/autumn_sm.png)-->
-<a href="/intuit/Autumn/blob/develop/misc/autumn_sm.png" target="_blank"><img src="/intuit/Autumn/raw/develop/misc/autumn_sm.png" alt="Autumn" style="max-width:20%;"></a>
+<a href="https://github.com/intuit/Autumn/blob/develop/misc/autumn_sm.png" target="_blank"><img src="https://github.com/intuit/Autumn/blob/develop/misc/autumn_sm.png" alt="Autumn" style="max-width:20%;"></a>
 
 ####Why
 
