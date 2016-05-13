@@ -20,7 +20,7 @@ package com.intuit.data.autumn.crypto;
  * A no-op encrytor implementation.
  */
 
-public class NoopEncryptor implements Encryptor {
+public class NoopEncryptor implements Encryptor, java.io.Serializable {
 
     /**
      *

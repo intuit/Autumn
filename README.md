@@ -5,14 +5,21 @@ develop [![Build Status](https://travis-ci.org/jwtodd/Autumn.svg?branch=develop)
 [![Coverage Status](https://coveralls.io/repos/github/intuit/Autumn/badge.svg?branch=develop)](https://coveralls.io/github/intuit/Autumn?branch=develop)
 [![Apache 2](http://img.shields.io/badge/license-Apache%202-red.svg)](http://www.apache.org/licenses/LICENSE-2.0)
 
-## Project
+## Project <a href="https://github.com/intuit/Autumn/blob/develop/misc/autumn_sm.png" target="_blank"><img src="https://github.com/intuit/Autumn/blob/develop/misc/autumn_sm.png" alt="Autumn" style="max-width:15%;"></a>
 
-This project is a collection of common/popular libraries brought together via low cohesion means allowing for
-rapid creation of modern Java applications brought about by judiciously adhering to near-zero component cohesion.
-As such, expected commodity elements are readily available via any number of configurations yet while at the same
-time entirely new subsystems can and will be added over time with little overall disruption. Further, every element
-can and should be considered as an operational peer to any other element, realizing the principle of
-[Separation of concerns](https://en.wikipedia.org/wiki/Separation_of_concerns).
+####Why
+
+  Contemporary API services built to scale are largely comprised of a sizable amount of common concerns, examples being secure service endpoints, request integrity validation, application logic delegation, durable persistence, operational concerns such as auditing and logging, etc.
+
+####What
+
+  Autumn is a collection of ready-to-use-as-is base implementations that solve the above thereby freeing up application concerns to focus on it’s principle value proposition. Autumn is used by a number of Intuit/IDEA initiatives, namely: ABTesting, ClickStream Ingress, etc.
+
+  Autumn can be viewed as the artifact of disciplined engineering rigor. Stabilizing the provided resources with concrete and readily consumable components yet readily enabling implementation to vary over time without requiring complete/large-scale application re-writes/overhauls thereby allowing applications organization wide to keep pace with current state offerings, innovate more rapidly via selective leverage, etc.
+
+####How
+
+  Autumn is a contemporary collection of readily consumable state-of-the-art Java libraries that satisfies micro-service principle concerns, namely: protocols, observability, manageability, separation of concerns, injectability (IoC), component lifecycle management, and discreet testability.
 
 ## Getting involved
 
