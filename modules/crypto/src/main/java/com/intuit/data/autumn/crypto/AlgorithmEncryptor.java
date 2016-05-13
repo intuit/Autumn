@@ -30,7 +30,7 @@ import static org.slf4j.LoggerFactory.getLogger;
  * A algorithmic backed cryptography utility.
  */
 
-public class AlgorithmEncryptor implements Encryptor {
+public class AlgorithmEncryptor implements Encryptor, java.io.Serializable {
 
     private static final Logger LOGGER = getLogger(AlgorithmEncryptor.class);
     private final PooledPBEStringEncryptor encryptor;

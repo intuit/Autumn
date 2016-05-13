@@ -8,7 +8,7 @@ import java.util.Map;
  * This class takes in a Map of version number & its associated Encryptor and calls the appropriate Encryptor to
  * decrypt the message.
  */
-public class Decryptor {
+public class Decryptor implements java.io.Serializable {
 
     private Map<String, Encryptor> encryptors;
 
