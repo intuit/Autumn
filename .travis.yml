@@ -12,7 +12,9 @@ branches:
     - develop
     - master
 after_success:
-  - mvn clean test -DTRAVIS_JOB_ID=$TRAVIS_JOB_ID jacoco:report cobertura:cobertura coveralls:report
+# FIXME: not able to repo-token not working
+#  - mvn clean test -DTRAVIS_JOB_ID=$TRAVIS_JOB_ID jacoco:report cobertura:cobertura coveralls:report
+  - mvn clean test -DTRAVIS_JOB_ID=$TRAVIS_JOB_ID jacoco:report cobertura:cobertura
   - "./.travis/before-deploy.sh"
   - "./.travis/deploy.sh"
 env:
