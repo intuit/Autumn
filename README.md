@@ -3,6 +3,7 @@
 master [![Build Status](https://travis-ci.org/jwtodd/Autumn.svg?branch=master)](https://travis-ci.org/jwtodd/Autumn)
 develop [![Build Status](https://travis-ci.org/jwtodd/Autumn.svg?branch=develop)](https://travis-ci.org/jwtodd/Autumn)
 [![Coverage Status](https://coveralls.io/repos/github/intuit/Autumn/badge.svg?branch=develop)](https://coveralls.io/github/intuit/Autumn?branch=develop)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.intuit.data.autumn/autumn/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.intuit.data.autumn/autumn)
 [![Apache 2](http://img.shields.io/badge/license-Apache%202-red.svg)](http://www.apache.org/licenses/LICENSE-2.0)
 
 ## Project <a href="https://github.com/intuit/Autumn/blob/develop/misc/autumn_sm.png" target="_blank"><img src="https://github.com/intuit/Autumn/blob/develop/misc/autumn_sm.png" alt="Autumn" style="max-width:15%;"></a>

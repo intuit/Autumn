@@ -21,11 +21,11 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.intuit.data.autumn</groupId>
     <artifactId>autumn</artifactId>
-    <version>1.0.20160513003624</version>
+    <version>1.0.20160515121534</version>
     <packaging>pom</packaging>
     <name>${project.artifactId}</name>
     <url>https://github.com/intuit/Autumn</url>
-    <description>This project is a collection of common/popular libraries brought together via low cohesion means allowing for rapid creation of modern Java applications brought about by judiciously adhering to near-zero component cohesion.</description>
+    <description>Opinionated micro-service kernel.</description>
     <properties>
         <application.name>${project.artifactId}-${project.version}-${application.profile}</application.name>
         <application.version>1.0</application.version>
