@@ -1,8 +1,6 @@
 # Autumn
 
-master [![Build Status](https://travis-ci.org/jwtodd/Autumn.svg?branch=master)](https://travis-ci.org/jwtodd/Autumn)
-develop [![Build Status](https://travis-ci.org/jwtodd/Autumn.svg?branch=develop)](https://travis-ci.org/jwtodd/Autumn)
-[![Coverage Status](https://coveralls.io/repos/github/intuit/Autumn/badge.svg?branch=develop)](https://coveralls.io/github/intuit/Autumn?branch=develop)
+[![Build Status](https://travis-ci.org/jwtodd/Autumn.svg?branch=master)](https://travis-ci.org/jwtodd/Autumn)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.intuit.data.autumn/autumn/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.intuit.data.autumn/autumn)
 [![Apache 2](http://img.shields.io/badge/license-Apache%202-red.svg)](http://www.apache.org/licenses/LICENSE-2.0)
 
@@ -59,11 +57,20 @@ article for more details about how to contribute.
 
 *   % java -cp ./modules/exemplary/target/autumn.exemplary-*-SNAPSHOT-development-all.jar com.intuit.data.autumn.exemplary.server.Main
 
+### Maven
+
+```xml
+<dependency>
+    <groupId>com.intuit.data.autumn</groupId>
+    <artifactId>autumn</artifactId>
+    <version>1.0.20160513005034</version>
+</dependency>
+```
 ### Test
 
 Java
 
-*   % java -cp modules/exemplary/target/autumn.exemplary-20151113104424-SNAPSHOT-development-all.jar com.intuit.data.autumn.exemplary.client.PingClient
+*   % java -cp modules/exemplary/target/autumn.exemplary-*-SNAPSHOT-development-all.jar com.intuit.data.autumn.exemplary.client.PingClient
 
 curl
 
