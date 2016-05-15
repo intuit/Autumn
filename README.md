@@ -42,20 +42,27 @@ article for more details about how to contribute.
 
 ### Environment
 
-*   % /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-*   % for f in "git git-flow-avh maven"; do brew install $f; fi
-*   % for c in "java"; do brew cask install $c; fi
+```bash
+% /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+% for f in "git git-flow-avh maven"; do brew install $f; fi
+% for c in "java"; do brew cask install $c; fi
+```
 
 ### Build
 
-*   % git clone https://github.com/intuit/autumn
-*   % cd autumn
-*   % git flow init
-*   % mvn clean package
+```bash
+% git clone https://github.com/intuit/autumn
+% cd autumn
+% git flow init
+% mvn clean package
+```
 
 ### Run
 
-*   % java -cp ./modules/exemplary/target/autumn.exemplary-*-SNAPSHOT-development-all.jar com.intuit.data.autumn.exemplary.server.Main
+```bash
+% java -cp ./modules/exemplary/target/autumn.exemplary-*-SNAPSHOT-development-all.jar \
+    com.intuit.data.autumn.exemplary.server.Main
+```
 
 ### Maven
 
@@ -70,13 +77,19 @@ article for more details about how to contribute.
 
 Java
 
-*   % java -cp modules/exemplary/target/autumn.exemplary-*-SNAPSHOT-development-all.jar com.intuit.data.autumn.exemplary.client.PingClient
+```bash
+% java -cp modules/exemplary/target/autumn.exemplary-*-SNAPSHOT-development-all.jar \
+    com.intuit.data.autumn.exemplary.client.PingClient
+```
 
 curl
 
-*   % curl http://localhost:8080/foo/proto/ping/d5bba1d7-3631-4f0a-a2c9-5ea53fb3d157
-*   % curl http://localhost:8080/foo/proto/pings
-*   % curl -X POST -H "Content-Type: application/json" -d '{"id":"id-1","message":"message-1"}' http://localhost:8080/foo/proto/ping
+```bash
+% curl http://localhost:8080/foo/proto/ping/d5bba1d7-3631-4f0a-a2c9-5ea53fb3d157
+% curl http://localhost:8080/foo/proto/pings
+% curl -X POST -H "Content-Type: application/json" -d '{"id":"id-1","message":"message-1"}' \
+    http://localhost:8080/foo/proto/ping
+```
 
 ## Future Considerations
 
