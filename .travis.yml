@@ -2,7 +2,7 @@ language: java
 jdk:
   - oraclejdk8
 install: mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
-script: mvn test -B
+#script: mvn test -B
 cache:
   directories:
     - ~/.m2/repository
@@ -12,6 +12,7 @@ branches:
     - develop
     - master
 after_success:
+  - mvn clean test jacoco:report cobertura:cobertura coveralls:report
   - "./.travis/before-deploy.sh"
   - "./.travis/deploy.sh"
 env:
