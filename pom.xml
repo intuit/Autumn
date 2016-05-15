@@ -296,6 +296,7 @@
                 <artifactId>coveralls-maven-plugin</artifactId>
                 <version>4.1.0</version>
                 <configuration>
+                    <!--
                     <coberturaReports>
                         <coberturaReport>
                             ${basedir}/target/coverage.xml
@@ -304,7 +305,8 @@
                     <sourceEncoding>UTF-8</sourceEncoding>
                     <serviceName>travis-ci</serviceName>
                     <serviceJobId>${env.TRAVIS_JOB_ID} </serviceJobId>
-                    <!--<repoToken>${env.coveralls_repo_token}</repoToken>-->
+                    -->
+                    <repoToken>${env.coveralls_repo_token}</repoToken>
                 </configuration>
             </plugin>
             <plugin>
