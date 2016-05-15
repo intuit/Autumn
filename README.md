@@ -2,7 +2,7 @@
 
 build:master [![Build Status](https://api.travis-ci.org/intuit/Autumn.svg?branch=master)](https://travis-ci.org/intuit/Autumn)
 build:develop [![Build Status](https://api.travis-ci.org/intuit/Autumn.svg?branch=develop)](https://travis-ci.org/intuit/Autumn)
-[![Coverage Status](https://coveralls.io/repos/github/intuit/Autumn/badge.svg?branch=develop)](https://coveralls.io/github/Intuit/Autumn?branch=develop)
+[![Coverage Status](https://coveralls.io/repos/github/intuit/Autumn/badge.svg?branch=develop)](https://coveralls.io/github/intuit/Autumn?branch=develop)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.intuit.data.autumn/autumn/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.intuit.data.autumn/autumn)
 [![Apache 2](http://img.shields.io/badge/license-Apache%202-green.svg)](http://www.apache.org/licenses/LICENSE-2.0)
 
