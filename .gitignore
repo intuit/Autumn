@@ -1,13 +1,8 @@
 *~
 target
-target
-**/*.log
-**/.project
-**/.classpath
-**/.settings
-**/.idea
+*.log
+*.idea
 *.iml
 *.ipr
 *.iws
 *.swp
-local.*

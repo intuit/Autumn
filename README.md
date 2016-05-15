@@ -1,10 +1,10 @@
 # Autumn
 
-master [![Build Status](https://travis-ci.org/jwtodd/Autumn.svg?branch=master)](https://travis-ci.org/jwtodd/Autumn)
-develop [![Build Status](https://travis-ci.org/jwtodd/Autumn.svg?branch=develop)](https://travis-ci.org/jwtodd/Autumn)
+build:master [![Build Status](https://api.travis-ci.org/intuit/Autumn.svg?branch=master)](https://travis-ci.org/intuit/Autumn)
+build:develop [![Build Status](https://api.travis-ci.org/intuit/Autumn.svg?branch=develop)](https://travis-ci.org/intuit/Autumn)
 [![Coverage Status](https://coveralls.io/repos/github/intuit/Autumn/badge.svg?branch=develop)](https://coveralls.io/github/intuit/Autumn?branch=develop)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.intuit.data.autumn/autumn/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.intuit.data.autumn/autumn)
-[![Apache 2](http://img.shields.io/badge/license-Apache%202-red.svg)](http://www.apache.org/licenses/LICENSE-2.0)
+[![Apache 2](http://img.shields.io/badge/license-Apache%202-green.svg)](http://www.apache.org/licenses/LICENSE-2.0)
 
 ## Project <a href="https://github.com/intuit/Autumn/blob/develop/misc/autumn_sm.png" target="_blank"><img src="https://github.com/intuit/Autumn/blob/develop/misc/autumn_sm.png" alt="Autumn" style="max-width:15%;"></a>
 
@@ -14,7 +14,7 @@ develop [![Build Status](https://travis-ci.org/jwtodd/Autumn.svg?branch=develop)
 
 ####What
 
-  Autumn is a collection of ready-to-use-as-is base implementations that solve the above thereby freeing up application concerns to focus on it’s principle value proposition. Autumn is used by a number of Intuit/IDEA initiatives, namely: ABTesting, ClickStream Ingress, etc.
+  Autumn is a collection of ready-to-use-as-is base implementations that solve the above thereby freeing up application concerns to focus on it’s principle value proposition. Autumn is used by a number of Intuit/IDEA big-data initiatives, namely: ABTesting, ClickStream Ingress, etc.
 
   Autumn can be viewed as the artifact of disciplined engineering rigor. Stabilizing the provided resources with concrete and readily consumable components yet readily enabling implementation to vary over time without requiring complete/large-scale application re-writes/overhauls thereby allowing applications organization wide to keep pace with current state offerings, innovate more rapidly via selective leverage, etc.
 
@@ -44,32 +44,54 @@ article for more details about how to contribute.
 
 ### Environment
 
-*   % /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-*   % for f in "git git-flow-avh maven"; do brew install $f; fi
-*   % for c in "java"; do brew cask install $c; fi
+```bash
+% /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+% for f in "git git-flow-avh maven"; do brew install $f; fi
+% for c in "java"; do brew cask install $c; fi
+```
 
 ### Build
 
-*   % git clone https://github.com/intuit/autumn
-*   % cd autumn
-*   % git flow init
-*   % mvn clean package
+```bash
+% git clone https://github.com/intuit/autumn
+% cd autumn
+% git flow init
+% mvn clean package
+```
 
 ### Run
 
-*   % java -cp ./modules/exemplary/target/autumn.exemplary-*-SNAPSHOT-development-all.jar com.intuit.data.autumn.exemplary.server.Main
+```bash
+% java -cp ./modules/exemplary/target/autumn.exemplary-*-SNAPSHOT-development-all.jar \
+    com.intuit.data.autumn.exemplary.server.Main
+```
 
+### Maven
+
+```xml
+<dependency>
+    <groupId>com.intuit.data.autumn</groupId>
+    <artifactId>autumn</artifactId>
+    <version>1.0.20160513005034</version>
+</dependency>
+```
 ### Test
 
 Java
 
-*   % java -cp modules/exemplary/target/autumn.exemplary-20151113104424-SNAPSHOT-development-all.jar com.intuit.data.autumn.exemplary.client.PingClient
+```bash
+% java -cp modules/exemplary/target/autumn.exemplary-*-SNAPSHOT-development-all.jar \
+    com.intuit.data.autumn.exemplary.client.PingClient
+```
 
 curl
 
-*   % curl http://localhost:8080/foo/proto/ping/d5bba1d7-3631-4f0a-a2c9-5ea53fb3d157
-*   % curl http://localhost:8080/foo/proto/pings
-*   % curl -X POST -H "Content-Type: application/json" -d '{"id":"id-1","message":"message-1"}' http://localhost:8080/foo/proto/ping
+```bash
+% curl http://localhost:8080/foo/proto/ping/d5bba1d7-3631-4f0a-a2c9-5ea53fb3d157
+% curl http://localhost:8080/foo/proto/pings
+% curl -X POST -H "Content-Type: application/json" -d '{"id":"id-1","message":"message-1"}' \
+    http://localhost:8080/foo/proto/ping
+```
 
 ## Future Considerations
 
