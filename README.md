@@ -1,13 +1,11 @@
 # Autumn
 
 [![Join the chat at https://gitter.im/intuit/Autumn](https://badges.gitter.im/intuit/Autumn.svg)](https://gitter.im/intuit/Autumn?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
 [![Build Status](https://api.travis-ci.org/intuit/Autumn.svg?branch=master)](https://travis-ci.org/intuit/Autumn)
+[![Build Status](https://api.travis-ci.org/intuit/Autumn.svg?branch=develop)](https://travis-ci.org/intuit/Autumn)
 [![Coverage Status](https://coveralls.io/repos/github/intuit/Autumn/badge.svg?branch=develop)](https://coveralls.io/github/intuit/Autumn?branch=develop)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.intuit.data.autumn/autumn/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.intuit.data.autumn/autumn)
 [![Apache 2](http://img.shields.io/badge/license-Apache%202-green.svg)](http://www.apache.org/licenses/LICENSE-2.0)
-
-[![Build Status](https://api.travis-ci.org/intuit/Autumn.svg?branch=develop)](https://travis-ci.org/intuit/Autumn) - branch:develop
 
 ## Project <a href="https://github.com/intuit/Autumn/blob/develop/misc/autumn_sm.png" target="_blank"><img src="https://github.com/intuit/Autumn/blob/develop/misc/autumn_sm.png" alt="Autumn" style="max-width:15%;"></a>
 
