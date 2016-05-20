@@ -47,8 +47,10 @@ article for more details about how to contribute.
 
 ```bash
 % /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-% for f in "git git-flow-avh maven"; do brew install $f; fi
-% for c in "java"; do brew cask install $c; fi
+% brew install git
+% brew install git-flow-avh
+% brew install maven
+% brew cask install java
 ```
 
 ### Build
@@ -76,6 +78,7 @@ article for more details about how to contribute.
     <version>1.0.20160513005034</version>
 </dependency>
 ```
+
 ### Test
 
 Java
