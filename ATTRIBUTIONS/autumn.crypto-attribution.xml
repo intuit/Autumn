@@ -153,25 +153,10 @@
          </downloadUrls>
       </dependency>
       <dependency>
-         <name>autumn.manage</name>
-         <groupId>com.intuit.data.autumn</groupId>
-         <artifactId>autumn.manage</artifactId>
-         <version>1.0.20160515205816-SNAPSHOT</version>
-         <projectUrl>https://github.com/intuit/Autumn/modules/autumn.manage</projectUrl>
-         <type>jar</type>
-         <licenses>
-            <license>
-               <name>Apache</name>
-               <url>http://www.apache.org/licenses/LICENSE-2.0</url>
-            </license>
-         </licenses>
-         <downloadUrls/>
-      </dependency>
-      <dependency>
          <name>autumn.utils</name>
          <groupId>com.intuit.data.autumn</groupId>
          <artifactId>autumn.utils</artifactId>
-         <version>1.0.20160515205816-SNAPSHOT</version>
+         <version>1.0.20160606082444-SNAPSHOT</version>
          <projectUrl>https://github.com/intuit/Autumn/modules/autumn.utils</projectUrl>
          <type>jar</type>
          <licenses>
@@ -196,6 +181,23 @@
          </licenses>
          <downloadUrls>
             <string>https://repo.maven.apache.org/maven2/javax/validation/validation-api/1.0.0.GA/validation-api-1.0.0.GA.jar</string>
+         </downloadUrls>
+      </dependency>
+      <dependency>
+         <name>Bouncy Castle Provider</name>
+         <groupId>org.bouncycastle</groupId>
+         <artifactId>bcprov-jdk15on</artifactId>
+         <version>1.53</version>
+         <projectUrl>http://www.bouncycastle.org/java.html</projectUrl>
+         <type>jar</type>
+         <licenses>
+            <license>
+               <name>Bouncy Castle Licence</name>
+               <url>http://www.bouncycastle.org/licence.html</url>
+            </license>
+         </licenses>
+         <downloadUrls>
+            <string>https://repo.maven.apache.org/maven2/org/bouncycastle/bcprov-jdk15on/1.53/bcprov-jdk15on-1.53.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
@@ -440,7 +442,7 @@
          <name>Guava: Google Core Libraries for Java</name>
          <groupId>com.google.guava</groupId>
          <artifactId>guava</artifactId>
-         <version>18.0</version>
+         <version>14.0.1</version>
          <projectUrl>http://code.google.com/p/guava-libraries/guava</projectUrl>
          <type>jar</type>
          <licenses>
@@ -450,7 +452,7 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/com/google/guava/guava/18.0/guava-18.0.jar</string>
+            <string>https://repo.maven.apache.org/maven2/com/google/guava/guava/14.0.1/guava-14.0.1.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
@@ -522,41 +524,20 @@
          </downloadUrls>
       </dependency>
       <dependency>
-         <name>JavaBeans Activation Framework (JAF)</name>
-         <groupId>javax.activation</groupId>
-         <artifactId>activation</artifactId>
-         <version>1.1</version>
-         <projectUrl>http://java.sun.com/products/javabeans/jaf/index.jsp</projectUrl>
+         <name>JASYPT: Java Simplified Encryption</name>
+         <groupId>org.jasypt</groupId>
+         <artifactId>jasypt</artifactId>
+         <version>1.9.2</version>
+         <projectUrl>http://www.jasypt.org</projectUrl>
          <type>jar</type>
          <licenses>
             <license>
-               <name>Common Development and Distribution License (CDDL) v1.0</name>
-               <url>https://glassfish.dev.java.net/public/CDDLv1.0.html</url>
+               <name>The Apache Software License, Version 2.0</name>
+               <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/javax/activation/activation/1.1/activation-1.1.jar</string>
-         </downloadUrls>
-      </dependency>
-      <dependency>
-         <name>JavaMail API jar</name>
-         <groupId>javax.mail</groupId>
-         <artifactId>javax.mail-api</artifactId>
-         <version>1.4.4</version>
-         <projectUrl>http://kenai.com/projects/javamail/javax.mail-api</projectUrl>
-         <type>jar</type>
-         <licenses>
-            <license>
-               <name>CDDL</name>
-               <url>http://www.sun.com/cddl</url>
-            </license>
-            <license>
-               <name>GPLv2+CE</name>
-               <url>https://glassfish.dev.java.net/public/CDDL+GPL.html</url>
-            </license>
-         </licenses>
-         <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/javax/mail/javax.mail-api/1.4.4/javax.mail-api-1.4.4.jar</string>
+            <string>https://repo.maven.apache.org/maven2/org/jasypt/jasypt/1.9.2/jasypt-1.9.2.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>

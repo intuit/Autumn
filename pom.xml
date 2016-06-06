@@ -363,7 +363,7 @@
                         </goals>
                         <phase>generate-resources</phase>
                         <configuration>
-                            <outputFile>${user.dir}/attributions/${project.artifactId}-attribution.xml</outputFile>
+                            <outputFile>${user.dir}/ATTRIBUTIONS/${project.artifactId}-attribution.xml</outputFile>
                         </configuration>
                     </execution>
                 </executions>
