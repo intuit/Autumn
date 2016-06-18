@@ -18,12 +18,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.intuit.data.autumn</groupId>
+        <groupId>com.intuit.autumn</groupId>
         <artifactId>autumn</artifactId>
-        <version>1.0.20160606213425-SNAPSHOT</version>
+        <version>1.0.2016060621-SNAPSHOT</version>
         <relativePath>../../pom.xml</relativePath>
     </parent>
-    <artifactId>autumn.manage</artifactId>
+    <artifactId>autumn-manage</artifactId>
     <packaging>jar</packaging>
     <name>${project.artifactId}</name>
     <dependencies>

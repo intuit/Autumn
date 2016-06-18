@@ -19,9 +19,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
                       http://maven.apache.org/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.intuit.data.autumn</groupId>
+    <groupId>com.intuit.autumn</groupId>
     <artifactId>autumn</artifactId>
-    <version>1.0.20160606213425-SNAPSHOT</version>
+    <version>1.0.2016060621-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>${project.artifactId}</name>
     <url>https://github.com/intuit/Autumn</url>
