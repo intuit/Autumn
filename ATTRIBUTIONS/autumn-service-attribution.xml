@@ -153,11 +153,11 @@
          </downloadUrls>
       </dependency>
       <dependency>
-         <name>autumn.manage</name>
-         <groupId>com.intuit.data.autumn</groupId>
-         <artifactId>autumn.manage</artifactId>
-         <version>1.0.20160606082444-SNAPSHOT</version>
-         <projectUrl>https://github.com/intuit/Autumn/modules/autumn.manage</projectUrl>
+         <name>autumn-manage</name>
+         <groupId>com.intuit.autumn</groupId>
+         <artifactId>autumn-manage</artifactId>
+         <version>1.0.2016060621-SNAPSHOT</version>
+         <projectUrl>https://github.com/intuit/Autumn/modules/autumn-manage</projectUrl>
          <type>jar</type>
          <licenses>
             <license>
@@ -168,11 +168,11 @@
          <downloadUrls/>
       </dependency>
       <dependency>
-         <name>autumn.utils</name>
-         <groupId>com.intuit.data.autumn</groupId>
-         <artifactId>autumn.utils</artifactId>
-         <version>1.0.20160606082444-SNAPSHOT</version>
-         <projectUrl>https://github.com/intuit/Autumn/modules/autumn.utils</projectUrl>
+         <name>autumn-utils</name>
+         <groupId>com.intuit.autumn</groupId>
+         <artifactId>autumn-utils</artifactId>
+         <version>1.0.2016060621-SNAPSHOT</version>
+         <projectUrl>https://github.com/intuit/Autumn/modules/autumn-utils</projectUrl>
          <type>jar</type>
          <licenses>
             <license>
@@ -437,23 +437,6 @@
          </downloadUrls>
       </dependency>
       <dependency>
-         <name>Graphite Integration for Metrics</name>
-         <groupId>io.dropwizard.metrics</groupId>
-         <artifactId>metrics-graphite</artifactId>
-         <version>3.1.0</version>
-         <projectUrl>http://metrics.codahale.com/metrics-graphite/</projectUrl>
-         <type>jar</type>
-         <licenses>
-            <license>
-               <name>Apache License 2.0</name>
-               <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
-            </license>
-         </licenses>
-         <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/dropwizard/metrics/metrics-graphite/3.1.0/metrics-graphite-3.1.0.jar</string>
-         </downloadUrls>
-      </dependency>
-      <dependency>
          <name>Guava: Google Core Libraries for Java</name>
          <groupId>com.google.guava</groupId>
          <artifactId>guava</artifactId>
@@ -522,40 +505,6 @@
          </downloadUrls>
       </dependency>
       <dependency>
-         <name>hystrix-codahale-metrics-publisher</name>
-         <groupId>com.netflix.hystrix</groupId>
-         <artifactId>hystrix-codahale-metrics-publisher</artifactId>
-         <version>1.4.23</version>
-         <projectUrl>https://github.com/Netflix/Hystrix</projectUrl>
-         <type>jar</type>
-         <licenses>
-            <license>
-               <name>The Apache Software License, Version 2.0</name>
-               <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-            </license>
-         </licenses>
-         <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/com/netflix/hystrix/hystrix-codahale-metrics-publisher/1.4.23/hystrix-codahale-metrics-publisher-1.4.23.jar</string>
-         </downloadUrls>
-      </dependency>
-      <dependency>
-         <name>hystrix-core</name>
-         <groupId>com.netflix.hystrix</groupId>
-         <artifactId>hystrix-core</artifactId>
-         <version>1.4.23</version>
-         <projectUrl>https://github.com/Netflix/Hystrix</projectUrl>
-         <type>jar</type>
-         <licenses>
-            <license>
-               <name>The Apache Software License, Version 2.0</name>
-               <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-            </license>
-         </licenses>
-         <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/com/netflix/hystrix/hystrix-core/1.4.23/hystrix-core-1.4.23.jar</string>
-         </downloadUrls>
-      </dependency>
-      <dependency>
          <name>Jackson</name>
          <groupId>org.codehaus.jackson</groupId>
          <artifactId>jackson-core-asl</artifactId>
@@ -570,6 +519,44 @@
          </licenses>
          <downloadUrls>
             <string>https://repo.maven.apache.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.11/jackson-core-asl-1.9.11.jar</string>
+         </downloadUrls>
+      </dependency>
+      <dependency>
+         <name>JavaBeans Activation Framework (JAF)</name>
+         <groupId>javax.activation</groupId>
+         <artifactId>activation</artifactId>
+         <version>1.1</version>
+         <projectUrl>http://java.sun.com/products/javabeans/jaf/index.jsp</projectUrl>
+         <type>jar</type>
+         <licenses>
+            <license>
+               <name>Common Development and Distribution License (CDDL) v1.0</name>
+               <url>https://glassfish.dev.java.net/public/CDDLv1.0.html</url>
+            </license>
+         </licenses>
+         <downloadUrls>
+            <string>https://repo.maven.apache.org/maven2/javax/activation/activation/1.1/activation-1.1.jar</string>
+         </downloadUrls>
+      </dependency>
+      <dependency>
+         <name>JavaMail API jar</name>
+         <groupId>javax.mail</groupId>
+         <artifactId>javax.mail-api</artifactId>
+         <version>1.4.4</version>
+         <projectUrl>http://kenai.com/projects/javamail/javax.mail-api</projectUrl>
+         <type>jar</type>
+         <licenses>
+            <license>
+               <name>CDDL</name>
+               <url>http://www.sun.com/cddl</url>
+            </license>
+            <license>
+               <name>GPLv2+CE</name>
+               <url>https://glassfish.dev.java.net/public/CDDL+GPL.html</url>
+            </license>
+         </licenses>
+         <downloadUrls>
+            <string>https://repo.maven.apache.org/maven2/javax/mail/javax.mail-api/1.4.4/javax.mail-api-1.4.4.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
@@ -682,23 +669,6 @@
          </licenses>
          <downloadUrls>
             <string>https://repo.maven.apache.org/maven2/ch/qos/logback/logback-core/1.1.3/logback-core-1.1.3.jar</string>
-         </downloadUrls>
-      </dependency>
-      <dependency>
-         <name>Metrics Core</name>
-         <groupId>io.dropwizard.metrics</groupId>
-         <artifactId>metrics-core</artifactId>
-         <version>3.1.0</version>
-         <projectUrl>http://metrics.codahale.com/metrics-core/</projectUrl>
-         <type>jar</type>
-         <licenses>
-            <license>
-               <name>Apache License 2.0</name>
-               <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
-            </license>
-         </licenses>
-         <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/dropwizard/metrics/metrics-core/3.1.0/metrics-core-3.1.0.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
@@ -855,27 +825,10 @@
          </downloadUrls>
       </dependency>
       <dependency>
-         <name>rxjava</name>
-         <groupId>io.reactivex</groupId>
-         <artifactId>rxjava</artifactId>
-         <version>1.1.0</version>
-         <projectUrl>https://github.com/ReactiveX/RxJava</projectUrl>
-         <type>jar</type>
-         <licenses>
-            <license>
-               <name>The Apache Software License, Version 2.0</name>
-               <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-            </license>
-         </licenses>
-         <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/reactivex/rxjava/1.1.0/rxjava-1.1.0.jar</string>
-         </downloadUrls>
-      </dependency>
-      <dependency>
          <name>SLF4J API Module</name>
          <groupId>org.slf4j</groupId>
          <artifactId>slf4j-api</artifactId>
-         <version>1.7.7</version>
+         <version>1.6.3</version>
          <projectUrl>http://www.slf4j.org</projectUrl>
          <type>jar</type>
          <licenses>
@@ -885,7 +838,7 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar</string>
+            <string>https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.6.3/slf4j-api-1.6.3.jar</string>
          </downloadUrls>
       </dependency>
    </dependencies>

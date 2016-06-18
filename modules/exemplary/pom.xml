@@ -18,12 +18,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.intuit.data.autumn</groupId>
+        <groupId>com.intuit.autumn</groupId>
         <artifactId>autumn</artifactId>
-        <version>1.0.20160606213425</version>
+        <version>1.0.1466220785</version>
         <relativePath>../../pom.xml</relativePath>
     </parent>
-    <artifactId>autumn.exemplary</artifactId>
+    <artifactId>autumn-exemplary</artifactId>
     <packaging>jar</packaging>
     <name>${project.artifactId}</name>
     <properties>
@@ -54,28 +54,28 @@
     </properties>
     <dependencies>
         <dependency>
-            <groupId>com.intuit.data.autumn</groupId>
-            <artifactId>autumn.api</artifactId>
+            <groupId>com.intuit.autumn</groupId>
+            <artifactId>autumn-api</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.intuit.data.autumn</groupId>
-            <artifactId>autumn.service</artifactId>
+            <groupId>com.intuit.autumn</groupId>
+            <artifactId>autumn-service</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.intuit.data.autumn</groupId>
-            <artifactId>autumn.client</artifactId>
+            <groupId>com.intuit.autumn</groupId>
+            <artifactId>autumn-client</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.intuit.data.autumn</groupId>
-            <artifactId>autumn.metrics</artifactId>
+            <groupId>com.intuit.autumn</groupId>
+            <artifactId>autumn-metrics</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.intuit.data.autumn</groupId>
-            <artifactId>autumn.web</artifactId>
+            <groupId>com.intuit.autumn</groupId>
+            <artifactId>autumn-web</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
     </dependencies>

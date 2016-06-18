@@ -153,11 +153,26 @@
          </downloadUrls>
       </dependency>
       <dependency>
-         <name>autumn.utils</name>
-         <groupId>com.intuit.data.autumn</groupId>
-         <artifactId>autumn.utils</artifactId>
-         <version>1.0.20160606082444-SNAPSHOT</version>
-         <projectUrl>https://github.com/intuit/Autumn/modules/autumn.utils</projectUrl>
+         <name>autumn-manage</name>
+         <groupId>com.intuit.autumn</groupId>
+         <artifactId>autumn-manage</artifactId>
+         <version>1.0.2016060621-SNAPSHOT</version>
+         <projectUrl>https://github.com/intuit/Autumn/modules/autumn-manage</projectUrl>
+         <type>jar</type>
+         <licenses>
+            <license>
+               <name>Apache</name>
+               <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+            </license>
+         </licenses>
+         <downloadUrls/>
+      </dependency>
+      <dependency>
+         <name>autumn-utils</name>
+         <groupId>com.intuit.autumn</groupId>
+         <artifactId>autumn-utils</artifactId>
+         <version>1.0.2016060621-SNAPSHOT</version>
+         <projectUrl>https://github.com/intuit/Autumn/modules/autumn-utils</projectUrl>
          <type>jar</type>
          <licenses>
             <license>
@@ -181,23 +196,6 @@
          </licenses>
          <downloadUrls>
             <string>https://repo.maven.apache.org/maven2/javax/validation/validation-api/1.0.0.GA/validation-api-1.0.0.GA.jar</string>
-         </downloadUrls>
-      </dependency>
-      <dependency>
-         <name>Bouncy Castle Provider</name>
-         <groupId>org.bouncycastle</groupId>
-         <artifactId>bcprov-jdk15on</artifactId>
-         <version>1.53</version>
-         <projectUrl>http://www.bouncycastle.org/java.html</projectUrl>
-         <type>jar</type>
-         <licenses>
-            <license>
-               <name>Bouncy Castle Licence</name>
-               <url>http://www.bouncycastle.org/licence.html</url>
-            </license>
-         </licenses>
-         <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/org/bouncycastle/bcprov-jdk15on/1.53/bcprov-jdk15on-1.53.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
@@ -439,10 +437,27 @@
          </downloadUrls>
       </dependency>
       <dependency>
+         <name>Graphite Integration for Metrics</name>
+         <groupId>io.dropwizard.metrics</groupId>
+         <artifactId>metrics-graphite</artifactId>
+         <version>3.1.0</version>
+         <projectUrl>http://metrics.codahale.com/metrics-graphite/</projectUrl>
+         <type>jar</type>
+         <licenses>
+            <license>
+               <name>Apache License 2.0</name>
+               <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+            </license>
+         </licenses>
+         <downloadUrls>
+            <string>https://repo.maven.apache.org/maven2/io/dropwizard/metrics/metrics-graphite/3.1.0/metrics-graphite-3.1.0.jar</string>
+         </downloadUrls>
+      </dependency>
+      <dependency>
          <name>Guava: Google Core Libraries for Java</name>
          <groupId>com.google.guava</groupId>
          <artifactId>guava</artifactId>
-         <version>14.0.1</version>
+         <version>18.0</version>
          <projectUrl>http://code.google.com/p/guava-libraries/guava</projectUrl>
          <type>jar</type>
          <licenses>
@@ -452,7 +467,7 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/com/google/guava/guava/14.0.1/guava-14.0.1.jar</string>
+            <string>https://repo.maven.apache.org/maven2/com/google/guava/guava/18.0/guava-18.0.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
@@ -507,6 +522,40 @@
          </downloadUrls>
       </dependency>
       <dependency>
+         <name>hystrix-codahale-metrics-publisher</name>
+         <groupId>com.netflix.hystrix</groupId>
+         <artifactId>hystrix-codahale-metrics-publisher</artifactId>
+         <version>1.4.23</version>
+         <projectUrl>https://github.com/Netflix/Hystrix</projectUrl>
+         <type>jar</type>
+         <licenses>
+            <license>
+               <name>The Apache Software License, Version 2.0</name>
+               <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            </license>
+         </licenses>
+         <downloadUrls>
+            <string>https://repo.maven.apache.org/maven2/com/netflix/hystrix/hystrix-codahale-metrics-publisher/1.4.23/hystrix-codahale-metrics-publisher-1.4.23.jar</string>
+         </downloadUrls>
+      </dependency>
+      <dependency>
+         <name>hystrix-core</name>
+         <groupId>com.netflix.hystrix</groupId>
+         <artifactId>hystrix-core</artifactId>
+         <version>1.4.23</version>
+         <projectUrl>https://github.com/Netflix/Hystrix</projectUrl>
+         <type>jar</type>
+         <licenses>
+            <license>
+               <name>The Apache Software License, Version 2.0</name>
+               <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            </license>
+         </licenses>
+         <downloadUrls>
+            <string>https://repo.maven.apache.org/maven2/com/netflix/hystrix/hystrix-core/1.4.23/hystrix-core-1.4.23.jar</string>
+         </downloadUrls>
+      </dependency>
+      <dependency>
          <name>Jackson</name>
          <groupId>org.codehaus.jackson</groupId>
          <artifactId>jackson-core-asl</artifactId>
@@ -521,23 +570,6 @@
          </licenses>
          <downloadUrls>
             <string>https://repo.maven.apache.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.11/jackson-core-asl-1.9.11.jar</string>
-         </downloadUrls>
-      </dependency>
-      <dependency>
-         <name>JASYPT: Java Simplified Encryption</name>
-         <groupId>org.jasypt</groupId>
-         <artifactId>jasypt</artifactId>
-         <version>1.9.2</version>
-         <projectUrl>http://www.jasypt.org</projectUrl>
-         <type>jar</type>
-         <licenses>
-            <license>
-               <name>The Apache Software License, Version 2.0</name>
-               <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-            </license>
-         </licenses>
-         <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/org/jasypt/jasypt/1.9.2/jasypt-1.9.2.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
@@ -650,6 +682,23 @@
          </licenses>
          <downloadUrls>
             <string>https://repo.maven.apache.org/maven2/ch/qos/logback/logback-core/1.1.3/logback-core-1.1.3.jar</string>
+         </downloadUrls>
+      </dependency>
+      <dependency>
+         <name>Metrics Core</name>
+         <groupId>io.dropwizard.metrics</groupId>
+         <artifactId>metrics-core</artifactId>
+         <version>3.1.0</version>
+         <projectUrl>http://metrics.codahale.com/metrics-core/</projectUrl>
+         <type>jar</type>
+         <licenses>
+            <license>
+               <name>Apache License 2.0</name>
+               <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+            </license>
+         </licenses>
+         <downloadUrls>
+            <string>https://repo.maven.apache.org/maven2/io/dropwizard/metrics/metrics-core/3.1.0/metrics-core-3.1.0.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
@@ -806,10 +855,27 @@
          </downloadUrls>
       </dependency>
       <dependency>
+         <name>rxjava</name>
+         <groupId>io.reactivex</groupId>
+         <artifactId>rxjava</artifactId>
+         <version>1.1.0</version>
+         <projectUrl>https://github.com/ReactiveX/RxJava</projectUrl>
+         <type>jar</type>
+         <licenses>
+            <license>
+               <name>The Apache Software License, Version 2.0</name>
+               <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            </license>
+         </licenses>
+         <downloadUrls>
+            <string>https://repo.maven.apache.org/maven2/io/reactivex/rxjava/1.1.0/rxjava-1.1.0.jar</string>
+         </downloadUrls>
+      </dependency>
+      <dependency>
          <name>SLF4J API Module</name>
          <groupId>org.slf4j</groupId>
          <artifactId>slf4j-api</artifactId>
-         <version>1.6.3</version>
+         <version>1.7.7</version>
          <projectUrl>http://www.slf4j.org</projectUrl>
          <type>jar</type>
          <licenses>
@@ -819,7 +885,7 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.6.3/slf4j-api-1.6.3.jar</string>
+            <string>https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar</string>
          </downloadUrls>
       </dependency>
    </dependencies>

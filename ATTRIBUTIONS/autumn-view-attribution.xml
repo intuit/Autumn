@@ -68,40 +68,6 @@
          </downloadUrls>
       </dependency>
       <dependency>
-         <name>Apache HttpClient</name>
-         <groupId>org.apache.httpcomponents</groupId>
-         <artifactId>httpclient</artifactId>
-         <version>4.3.5</version>
-         <projectUrl>http://hc.apache.org/httpcomponents-client</projectUrl>
-         <type>jar</type>
-         <licenses>
-            <license>
-               <name>Apache License, Version 2.0</name>
-               <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-            </license>
-         </licenses>
-         <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpclient/4.3.5/httpclient-4.3.5.jar</string>
-         </downloadUrls>
-      </dependency>
-      <dependency>
-         <name>Apache HttpCore</name>
-         <groupId>org.apache.httpcomponents</groupId>
-         <artifactId>httpcore</artifactId>
-         <version>4.3.2</version>
-         <projectUrl>http://hc.apache.org/httpcomponents-core-ga</projectUrl>
-         <type>jar</type>
-         <licenses>
-            <license>
-               <name>Apache License, Version 2.0</name>
-               <url>LICENSE.txt</url>
-            </license>
-         </licenses>
-         <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcore/4.3.2/httpcore-4.3.2.jar</string>
-         </downloadUrls>
-      </dependency>
-      <dependency>
          <name>Apache XBean :: Classpath Resource Finder</name>
          <groupId>org.apache.xbean</groupId>
          <artifactId>xbean-finder</artifactId>
@@ -187,11 +153,11 @@
          </downloadUrls>
       </dependency>
       <dependency>
-         <name>autumn.api</name>
-         <groupId>com.intuit.data.autumn</groupId>
-         <artifactId>autumn.api</artifactId>
-         <version>1.0.20160606082444-SNAPSHOT</version>
-         <projectUrl>https://github.com/intuit/Autumn/modules/autumn.api</projectUrl>
+         <name>autumn-manage</name>
+         <groupId>com.intuit.autumn</groupId>
+         <artifactId>autumn-manage</artifactId>
+         <version>1.0.2016060621-SNAPSHOT</version>
+         <projectUrl>https://github.com/intuit/Autumn/modules/autumn-manage</projectUrl>
          <type>jar</type>
          <licenses>
             <license>
@@ -202,11 +168,11 @@
          <downloadUrls/>
       </dependency>
       <dependency>
-         <name>autumn.client</name>
-         <groupId>com.intuit.data.autumn</groupId>
-         <artifactId>autumn.client</artifactId>
-         <version>1.0.20160606082444-SNAPSHOT</version>
-         <projectUrl>https://github.com/intuit/Autumn/modules/autumn.client</projectUrl>
+         <name>autumn-utils</name>
+         <groupId>com.intuit.autumn</groupId>
+         <artifactId>autumn-utils</artifactId>
+         <version>1.0.2016060621-SNAPSHOT</version>
+         <projectUrl>https://github.com/intuit/Autumn/modules/autumn-utils</projectUrl>
          <type>jar</type>
          <licenses>
             <license>
@@ -217,71 +183,11 @@
          <downloadUrls/>
       </dependency>
       <dependency>
-         <name>autumn.manage</name>
-         <groupId>com.intuit.data.autumn</groupId>
-         <artifactId>autumn.manage</artifactId>
-         <version>1.0.20160606082444-SNAPSHOT</version>
-         <projectUrl>https://github.com/intuit/Autumn/modules/autumn.manage</projectUrl>
-         <type>jar</type>
-         <licenses>
-            <license>
-               <name>Apache</name>
-               <url>http://www.apache.org/licenses/LICENSE-2.0</url>
-            </license>
-         </licenses>
-         <downloadUrls/>
-      </dependency>
-      <dependency>
-         <name>autumn.metrics</name>
-         <groupId>com.intuit.data.autumn</groupId>
-         <artifactId>autumn.metrics</artifactId>
-         <version>1.0.20160606082444-SNAPSHOT</version>
-         <projectUrl>https://github.com/intuit/Autumn/modules/autumn.metrics</projectUrl>
-         <type>jar</type>
-         <licenses>
-            <license>
-               <name>Apache</name>
-               <url>http://www.apache.org/licenses/LICENSE-2.0</url>
-            </license>
-         </licenses>
-         <downloadUrls/>
-      </dependency>
-      <dependency>
-         <name>autumn.service</name>
-         <groupId>com.intuit.data.autumn</groupId>
-         <artifactId>autumn.service</artifactId>
-         <version>1.0.20160606082444-SNAPSHOT</version>
-         <projectUrl>https://github.com/intuit/Autumn/modules/autumn.service</projectUrl>
-         <type>jar</type>
-         <licenses>
-            <license>
-               <name>Apache</name>
-               <url>http://www.apache.org/licenses/LICENSE-2.0</url>
-            </license>
-         </licenses>
-         <downloadUrls/>
-      </dependency>
-      <dependency>
-         <name>autumn.utils</name>
-         <groupId>com.intuit.data.autumn</groupId>
-         <artifactId>autumn.utils</artifactId>
-         <version>1.0.20160606082444-SNAPSHOT</version>
-         <projectUrl>https://github.com/intuit/Autumn/modules/autumn.utils</projectUrl>
-         <type>jar</type>
-         <licenses>
-            <license>
-               <name>Apache</name>
-               <url>http://www.apache.org/licenses/LICENSE-2.0</url>
-            </license>
-         </licenses>
-         <downloadUrls/>
-      </dependency>
-      <dependency>
-         <name>autumn.web</name>
-         <groupId>com.intuit.data.autumn</groupId>
-         <artifactId>autumn.web</artifactId>
-         <version>1.0.20160606082444-SNAPSHOT</version>
-         <projectUrl>https://github.com/intuit/Autumn/modules/autumn.web</projectUrl>
+         <name>autumn-web</name>
+         <groupId>com.intuit.autumn</groupId>
+         <artifactId>autumn-web</artifactId>
+         <version>1.0.2016060621-SNAPSHOT</version>
+         <projectUrl>https://github.com/intuit/Autumn/modules/autumn-web</projectUrl>
          <type>jar</type>
          <licenses>
             <license>
@@ -342,17 +248,6 @@
          </downloadUrls>
       </dependency>
       <dependency>
-         <name>Codec</name>
-         <groupId>commons-codec</groupId>
-         <artifactId>commons-codec</artifactId>
-         <version>1.2</version>
-         <type>jar</type>
-         <licenses/>
-         <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.2/commons-codec-1.2.jar</string>
-         </downloadUrls>
-      </dependency>
-      <dependency>
          <name>Commons Configuration</name>
          <groupId>commons-configuration</groupId>
          <artifactId>commons-configuration</artifactId>
@@ -401,6 +296,23 @@
          </licenses>
          <downloadUrls>
             <string>https://repo.maven.apache.org/maven2/commons-lang/commons-lang/2.6/commons-lang-2.6.jar</string>
+         </downloadUrls>
+      </dependency>
+      <dependency>
+         <name>Commons Logging</name>
+         <groupId>commons-logging</groupId>
+         <artifactId>commons-logging</artifactId>
+         <version>1.1.1</version>
+         <projectUrl>http://commons.apache.org/logging</projectUrl>
+         <type>jar</type>
+         <licenses>
+            <license>
+               <name>The Apache Software License, Version 2.0</name>
+               <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            </license>
+         </licenses>
+         <downloadUrls>
+            <string>https://repo.maven.apache.org/maven2/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
@@ -557,27 +469,10 @@
          </downloadUrls>
       </dependency>
       <dependency>
-         <name>Graphite Integration for Metrics</name>
-         <groupId>io.dropwizard.metrics</groupId>
-         <artifactId>metrics-graphite</artifactId>
-         <version>3.1.0</version>
-         <projectUrl>http://metrics.codahale.com/metrics-graphite/</projectUrl>
-         <type>jar</type>
-         <licenses>
-            <license>
-               <name>Apache License 2.0</name>
-               <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
-            </license>
-         </licenses>
-         <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/dropwizard/metrics/metrics-graphite/3.1.0/metrics-graphite-3.1.0.jar</string>
-         </downloadUrls>
-      </dependency>
-      <dependency>
          <name>Guava: Google Core Libraries for Java</name>
          <groupId>com.google.guava</groupId>
          <artifactId>guava</artifactId>
-         <version>14.0.1</version>
+         <version>13.0.1</version>
          <projectUrl>http://code.google.com/p/guava-libraries/guava</projectUrl>
          <type>jar</type>
          <licenses>
@@ -587,7 +482,7 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/com/google/guava/guava/14.0.1/guava-14.0.1.jar</string>
+            <string>https://repo.maven.apache.org/maven2/com/google/guava/guava/13.0.1/guava-13.0.1.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
@@ -639,57 +534,6 @@
          </licenses>
          <downloadUrls>
             <string>https://repo.maven.apache.org/maven2/org/hibernate/hibernate-validator/4.1.0.Final/hibernate-validator-4.1.0.Final.jar</string>
-         </downloadUrls>
-      </dependency>
-      <dependency>
-         <name>HttpClient</name>
-         <groupId>commons-httpclient</groupId>
-         <artifactId>commons-httpclient</artifactId>
-         <version>3.1</version>
-         <projectUrl>http://jakarta.apache.org/httpcomponents/httpclient-3.x/</projectUrl>
-         <type>jar</type>
-         <licenses>
-            <license>
-               <name>Apache License</name>
-               <url>http://www.apache.org/licenses/LICENSE-2.0</url>
-            </license>
-         </licenses>
-         <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar</string>
-         </downloadUrls>
-      </dependency>
-      <dependency>
-         <name>hystrix-codahale-metrics-publisher</name>
-         <groupId>com.netflix.hystrix</groupId>
-         <artifactId>hystrix-codahale-metrics-publisher</artifactId>
-         <version>1.4.23</version>
-         <projectUrl>https://github.com/Netflix/Hystrix</projectUrl>
-         <type>jar</type>
-         <licenses>
-            <license>
-               <name>The Apache Software License, Version 2.0</name>
-               <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-            </license>
-         </licenses>
-         <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/com/netflix/hystrix/hystrix-codahale-metrics-publisher/1.4.23/hystrix-codahale-metrics-publisher-1.4.23.jar</string>
-         </downloadUrls>
-      </dependency>
-      <dependency>
-         <name>hystrix-core</name>
-         <groupId>com.netflix.hystrix</groupId>
-         <artifactId>hystrix-core</artifactId>
-         <version>1.4.23</version>
-         <projectUrl>https://github.com/Netflix/Hystrix</projectUrl>
-         <type>jar</type>
-         <licenses>
-            <license>
-               <name>The Apache Software License, Version 2.0</name>
-               <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-            </license>
-         </licenses>
-         <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/com/netflix/hystrix/hystrix-core/1.4.23/hystrix-core-1.4.23.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
@@ -846,27 +690,6 @@
          </downloadUrls>
       </dependency>
       <dependency>
-         <name>JavaMail API jar</name>
-         <groupId>javax.mail</groupId>
-         <artifactId>javax.mail-api</artifactId>
-         <version>1.4.4</version>
-         <projectUrl>http://kenai.com/projects/javamail/javax.mail-api</projectUrl>
-         <type>jar</type>
-         <licenses>
-            <license>
-               <name>CDDL</name>
-               <url>http://www.sun.com/cddl</url>
-            </license>
-            <license>
-               <name>GPLv2+CE</name>
-               <url>https://glassfish.dev.java.net/public/CDDL+GPL.html</url>
-            </license>
-         </licenses>
-         <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/javax/mail/javax.mail-api/1.4.4/javax.mail-api-1.4.4.jar</string>
-         </downloadUrls>
-      </dependency>
-      <dependency>
          <name>Javassist</name>
          <groupId>org.javassist</groupId>
          <artifactId>javassist</artifactId>
@@ -969,48 +792,6 @@
          </licenses>
          <downloadUrls>
             <string>https://repo.maven.apache.org/maven2/com/sun/xml/bind/jaxb-impl/2.2.3-1/jaxb-impl-2.2.3-1.jar</string>
-         </downloadUrls>
-      </dependency>
-      <dependency>
-         <name>Jersey Apache HTTP Client</name>
-         <groupId>com.sun.jersey.contribs</groupId>
-         <artifactId>jersey-apache-client</artifactId>
-         <version>1.19</version>
-         <projectUrl>https://jersey.java.net/jersey-contribs/jersey-apache-client/</projectUrl>
-         <type>jar</type>
-         <licenses>
-            <license>
-               <name>CDDL 1.1</name>
-               <url>http://glassfish.java.net/public/CDDL+GPL_1_1.html</url>
-            </license>
-            <license>
-               <name>GPL2 w/ CPE</name>
-               <url>http://glassfish.java.net/public/CDDL+GPL_1_1.html</url>
-            </license>
-         </licenses>
-         <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/com/sun/jersey/contribs/jersey-apache-client/1.19/jersey-apache-client-1.19.jar</string>
-         </downloadUrls>
-      </dependency>
-      <dependency>
-         <name>jersey-client</name>
-         <groupId>com.sun.jersey</groupId>
-         <artifactId>jersey-client</artifactId>
-         <version>1.19</version>
-         <projectUrl>https://jersey.java.net/jersey-client/</projectUrl>
-         <type>jar</type>
-         <licenses>
-            <license>
-               <name>CDDL 1.1</name>
-               <url>http://glassfish.java.net/public/CDDL+GPL_1_1.html</url>
-            </license>
-            <license>
-               <name>GPL2 w/ CPE</name>
-               <url>http://glassfish.java.net/public/CDDL+GPL_1_1.html</url>
-            </license>
-         </licenses>
-         <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/com/sun/jersey/jersey-client/1.19/jersey-client-1.19.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
@@ -1406,40 +1187,6 @@
          </downloadUrls>
       </dependency>
       <dependency>
-         <name>Logging</name>
-         <groupId>commons-logging</groupId>
-         <artifactId>commons-logging</artifactId>
-         <version>1.0.4</version>
-         <projectUrl>http://jakarta.apache.org/commons/logging/</projectUrl>
-         <type>jar</type>
-         <licenses>
-            <license>
-               <name>The Apache Software License, Version 2.0</name>
-               <url>/LICENSE.txt</url>
-            </license>
-         </licenses>
-         <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.jar</string>
-         </downloadUrls>
-      </dependency>
-      <dependency>
-         <name>Metrics Core</name>
-         <groupId>io.dropwizard.metrics</groupId>
-         <artifactId>metrics-core</artifactId>
-         <version>3.1.0</version>
-         <projectUrl>http://metrics.codahale.com/metrics-core/</projectUrl>
-         <type>jar</type>
-         <licenses>
-            <license>
-               <name>Apache License 2.0</name>
-               <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
-            </license>
-         </licenses>
-         <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/dropwizard/metrics/metrics-core/3.1.0/metrics-core-3.1.0.jar</string>
-         </downloadUrls>
-      </dependency>
-      <dependency>
          <name>Metrics Core Library</name>
          <groupId>com.yammer.metrics</groupId>
          <artifactId>metrics-core</artifactId>
@@ -1624,23 +1371,6 @@
          </licenses>
          <downloadUrls>
             <string>https://repo.maven.apache.org/maven2/org/powermock/powermock-reflect/1.6.2/powermock-reflect-1.6.2.jar</string>
-         </downloadUrls>
-      </dependency>
-      <dependency>
-         <name>rxjava</name>
-         <groupId>io.reactivex</groupId>
-         <artifactId>rxjava</artifactId>
-         <version>1.1.0</version>
-         <projectUrl>https://github.com/ReactiveX/RxJava</projectUrl>
-         <type>jar</type>
-         <licenses>
-            <license>
-               <name>The Apache Software License, Version 2.0</name>
-               <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-            </license>
-         </licenses>
-         <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/reactivex/rxjava/1.1.0/rxjava-1.1.0.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
