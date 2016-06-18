@@ -20,7 +20,7 @@
     <parent>
         <groupId>com.intuit.autumn</groupId>
         <artifactId>autumn</artifactId>
-        <version>1.0.2016060621-SNAPSHOT</version>
+        <version>1.0.1466220785</version>
         <relativePath>../../pom.xml</relativePath>
     </parent>
     <artifactId>autumn-web</artifactId>
