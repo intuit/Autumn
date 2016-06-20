@@ -44,7 +44,7 @@ fromPom() {
 }
 
 start() {
-  version=$(fromPom . project.properties application.version).`date "+%s"`
+  version=$(fromPom . project.properties application.version).`date -u "+%Y%m%d%H%M%S"`
 
   echo "milestone version: $version"
 
