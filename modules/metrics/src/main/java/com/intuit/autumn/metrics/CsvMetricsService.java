@@ -48,8 +48,8 @@ public class CsvMetricsService extends AbstractIdleService {
     /**
      * CVS java-metrics reporter constructor with configurable state.
      *
-     * @param directory local directory with which persist the CVS report
-     * @param interval the frequency with which to persist the CVS report
+     * @param directory      local directory with which persist the CVS report
+     * @param interval       the frequency with which to persist the CVS report
      * @param metricRegistry java-metrics registry
      */
 
@@ -87,16 +87,16 @@ public class CsvMetricsService extends AbstractIdleService {
         }
 
         if (directory.mkdirs()) {
-           reporter = CsvReporter.forRegistry(metricRegistry)
-                  .formatFor(US)
-                  .convertRatesTo(SECONDS)
-                  .convertDurationsTo(MILLISECONDS)
-                  .build(directory);
+            reporter = CsvReporter.forRegistry(metricRegistry)
+                    .formatFor(US)
+                    .convertRatesTo(SECONDS)
+                    .convertDurationsTo(MILLISECONDS)
+                    .build(directory);
 
-           reporter.start(interval, SECONDS);
-           LOGGER.info("started {}, directory: {}, interval: {}", serviceName(), directory, interval);
+            reporter.start(interval, SECONDS);
+            LOGGER.info("started {}, directory: {}, interval: {}", serviceName(), directory, interval);
         } else {
-           LOGGER.error("Can't create directory: {}", directory);
+            LOGGER.error("Can't create directory: {}", directory);
 
             throw new MetricsException(format("unable to make directory: %s", directory));
         }
