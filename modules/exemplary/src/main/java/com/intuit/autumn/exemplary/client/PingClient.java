@@ -42,7 +42,6 @@ public class PingClient {
 
     private static final String context;
     private static final ObjectMapper mapper = new ObjectMapper();
-    private static final URI pingService = URI.create("http://localhost:8080" + context + "/proto");
 
     static {
         String applicationContextPath = PropertyFactory.create("/web.properties", PingClient.class)
@@ -50,6 +49,8 @@ public class PingClient {
 
         context = applicationContextPath.equals("/") ? "" : applicationContextPath;
     }
+
+    private static final URI pingService = URI.create("http://localhost:8080" + context + "/proto");
 
     /**
      * Application entry point.
