@@ -53,7 +53,7 @@
     </appender>
 
     <!--
-    <logger name="com.intuit.data.autumn.exemplary.server" level="DEBUG">
+    <logger name="com.intuit.autumn.exemplary.server" level="DEBUG">
         <appender-ref ref="CONSOLE"/>
         <appender-ref ref="FILE"/>
     </logger>
