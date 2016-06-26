@@ -20,7 +20,7 @@
     <parent>
         <groupId>com.intuit.autumn</groupId>
         <artifactId>autumn</artifactId>
-        <version>1.0.20160620204742</version>
+        <version>1.0.20160626031434</version>
         <relativePath>../../pom.xml</relativePath>
     </parent>
     <artifactId>autumn-exemplary</artifactId>
@@ -28,7 +28,7 @@
     <name>${project.artifactId}</name>
     <properties>
         <sonar.skip>true</sonar.skip>
-        <application.main>com.intuit.data.autumn.exemplary.server.Main</application.main>
+        <application.main>com.intuit.autumn.exemplary.server.Main</application.main>
         <application.daemon.enable>false</application.daemon.enable>
         <!-- todo: [jwtodd] fix/remove
         <application.daemon.enable>true</application.daemon.enable>
@@ -38,7 +38,7 @@
         <application.http.enabled>true</application.http.enabled>
         <application.http.port>8080</application.http.port>
         <application.http.context.path>/foo</application.http.context.path>
-        <application.jersey.provider.paths>com.intuit.data.autumn.exemplary.server</application.jersey.provider.paths>
+        <application.jersey.provider.paths>com.intuit.autumn.exemplary.server</application.jersey.provider.paths>
         <application.jersey.pojo.enabled>true</application.jersey.pojo.enabled>
         <application.jersey.request.filters/>
         <application.jersey.response.filters/>
