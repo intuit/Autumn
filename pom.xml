@@ -19,9 +19,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
                       http://maven.apache.org/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.intuit.data.autumn</groupId>
+    <groupId>com.intuit.autumn</groupId>
     <artifactId>autumn</artifactId>
-    <version>1.0.20160606082444-SNAPSHOT</version>
+    <version>1.0.20160620204742-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>${project.artifactId}</name>
     <url>https://github.com/intuit/Autumn</url>
@@ -363,7 +363,7 @@
                         </goals>
                         <phase>generate-resources</phase>
                         <configuration>
-                            <outputFile>${user.dir}/attributions/${project.artifactId}-attribution.xml</outputFile>
+                            <outputFile>${user.dir}/ATTRIBUTIONS/${project.artifactId}-attribution.xml</outputFile>
                         </configuration>
                     </execution>
                 </executions>

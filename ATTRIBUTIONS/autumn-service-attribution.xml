@@ -153,11 +153,11 @@
          </downloadUrls>
       </dependency>
       <dependency>
-         <name>autumn.manage</name>
-         <groupId>com.intuit.data.autumn</groupId>
-         <artifactId>autumn.manage</artifactId>
-         <version>1.0.20160515205816-SNAPSHOT</version>
-         <projectUrl>https://github.com/intuit/Autumn/modules/autumn.manage</projectUrl>
+         <name>autumn-manage</name>
+         <groupId>com.intuit.autumn</groupId>
+         <artifactId>autumn-manage</artifactId>
+         <version>1.0.2016060621-SNAPSHOT</version>
+         <projectUrl>https://github.com/intuit/Autumn/modules/autumn-manage</projectUrl>
          <type>jar</type>
          <licenses>
             <license>
@@ -168,11 +168,11 @@
          <downloadUrls/>
       </dependency>
       <dependency>
-         <name>autumn.utils</name>
-         <groupId>com.intuit.data.autumn</groupId>
-         <artifactId>autumn.utils</artifactId>
-         <version>1.0.20160515205816-SNAPSHOT</version>
-         <projectUrl>https://github.com/intuit/Autumn/modules/autumn.utils</projectUrl>
+         <name>autumn-utils</name>
+         <groupId>com.intuit.autumn</groupId>
+         <artifactId>autumn-utils</artifactId>
+         <version>1.0.2016060621-SNAPSHOT</version>
+         <projectUrl>https://github.com/intuit/Autumn/modules/autumn-utils</projectUrl>
          <type>jar</type>
          <licenses>
             <license>
@@ -304,7 +304,7 @@
          <name>Data Mapper for Jackson</name>
          <groupId>org.codehaus.jackson</groupId>
          <artifactId>jackson-mapper-asl</artifactId>
-         <version>1.9.2</version>
+         <version>1.9.11</version>
          <projectUrl>http://jackson.codehaus.org</projectUrl>
          <type>jar</type>
          <licenses>
@@ -314,7 +314,7 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.2/jackson-mapper-asl-1.9.2.jar</string>
+            <string>https://repo.maven.apache.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.11/jackson-mapper-asl-1.9.11.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
@@ -420,23 +420,6 @@
          </downloadUrls>
       </dependency>
       <dependency>
-         <name>Google Guice - Extensions - Servlet</name>
-         <groupId>com.google.inject.extensions</groupId>
-         <artifactId>guice-servlet</artifactId>
-         <version>4.0</version>
-         <projectUrl>https://github.com/google/guice/extensions-parent/guice-servlet</projectUrl>
-         <type>jar</type>
-         <licenses>
-            <license>
-               <name>The Apache Software License, Version 2.0</name>
-               <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-            </license>
-         </licenses>
-         <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/com/google/inject/extensions/guice-servlet/4.0/guice-servlet-4.0.jar</string>
-         </downloadUrls>
-      </dependency>
-      <dependency>
          <name>governator</name>
          <groupId>com.netflix.governator</groupId>
          <artifactId>governator</artifactId>
@@ -525,7 +508,7 @@
          <name>Jackson</name>
          <groupId>org.codehaus.jackson</groupId>
          <artifactId>jackson-core-asl</artifactId>
-         <version>1.9.2</version>
+         <version>1.9.11</version>
          <projectUrl>http://jackson.codehaus.org</projectUrl>
          <type>jar</type>
          <licenses>
@@ -535,126 +518,7 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.2/jackson-core-asl-1.9.2.jar</string>
-         </downloadUrls>
-      </dependency>
-      <dependency>
-         <name>Jackson-annotations</name>
-         <groupId>com.fasterxml.jackson.core</groupId>
-         <artifactId>jackson-annotations</artifactId>
-         <version>2.7.0</version>
-         <projectUrl>http://github.com/FasterXML/jackson</projectUrl>
-         <type>jar</type>
-         <licenses>
-            <license>
-               <name>The Apache Software License, Version 2.0</name>
-               <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-            </license>
-         </licenses>
-         <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.7.0/jackson-annotations-2.7.0.jar</string>
-         </downloadUrls>
-      </dependency>
-      <dependency>
-         <name>Jackson-core</name>
-         <groupId>com.fasterxml.jackson.core</groupId>
-         <artifactId>jackson-core</artifactId>
-         <version>2.7.2</version>
-         <projectUrl>https://github.com/FasterXML/jackson-core</projectUrl>
-         <type>jar</type>
-         <licenses>
-            <license>
-               <name>The Apache Software License, Version 2.0</name>
-               <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-            </license>
-         </licenses>
-         <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-core/2.7.2/jackson-core-2.7.2.jar</string>
-         </downloadUrls>
-      </dependency>
-      <dependency>
-         <name>jackson-databind</name>
-         <groupId>com.fasterxml.jackson.core</groupId>
-         <artifactId>jackson-databind</artifactId>
-         <version>2.7.2</version>
-         <projectUrl>http://github.com/FasterXML/jackson</projectUrl>
-         <type>jar</type>
-         <licenses>
-            <license>
-               <name>The Apache Software License, Version 2.0</name>
-               <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-            </license>
-         </licenses>
-         <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.7.2/jackson-databind-2.7.2.jar</string>
-         </downloadUrls>
-      </dependency>
-      <dependency>
-         <name>Jackson-JAXRS-base</name>
-         <groupId>com.fasterxml.jackson.jaxrs</groupId>
-         <artifactId>jackson-jaxrs-base</artifactId>
-         <version>2.7.2</version>
-         <projectUrl>http://wiki.fasterxml.com/JacksonHome/jackson-jaxrs-base</projectUrl>
-         <type>jar</type>
-         <licenses>
-            <license>
-               <name>The Apache Software License, Version 2.0</name>
-               <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-            </license>
-         </licenses>
-         <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jaxrs/jackson-jaxrs-base/2.7.2/jackson-jaxrs-base-2.7.2.jar</string>
-         </downloadUrls>
-      </dependency>
-      <dependency>
-         <name>Jackson-JAXRS-JSON</name>
-         <groupId>com.fasterxml.jackson.jaxrs</groupId>
-         <artifactId>jackson-jaxrs-json-provider</artifactId>
-         <version>2.7.2</version>
-         <projectUrl>http://wiki.fasterxml.com/JacksonHome/jackson-jaxrs-json-provider</projectUrl>
-         <type>jar</type>
-         <licenses>
-            <license>
-               <name>The Apache Software License, Version 2.0</name>
-               <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-            </license>
-         </licenses>
-         <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jaxrs/jackson-jaxrs-json-provider/2.7.2/jackson-jaxrs-json-provider-2.7.2.jar</string>
-         </downloadUrls>
-      </dependency>
-      <dependency>
-         <name>Jackson-module-JAXB-annotations</name>
-         <groupId>com.fasterxml.jackson.module</groupId>
-         <artifactId>jackson-module-jaxb-annotations</artifactId>
-         <version>2.7.2</version>
-         <projectUrl>http://wiki.fasterxml.com/JacksonJAXBAnnotations</projectUrl>
-         <type>jar</type>
-         <licenses>
-            <license>
-               <name>The Apache Software License, Version 2.0</name>
-               <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-            </license>
-         </licenses>
-         <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.7.2/jackson-module-jaxb-annotations-2.7.2.jar</string>
-         </downloadUrls>
-      </dependency>
-      <dependency>
-         <name>Java Servlet API</name>
-         <groupId>javax.servlet</groupId>
-         <artifactId>javax.servlet-api</artifactId>
-         <version>3.1.0</version>
-         <projectUrl>http://servlet-spec.java.net</projectUrl>
-         <type>jar</type>
-         <licenses>
-            <license>
-               <name>CDDL + GPLv2 with classpath exception</name>
-               <url>https://glassfish.dev.java.net/nonav/public/CDDL+GPL.html</url>
-            </license>
-         </licenses>
-         <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar</string>
+            <string>https://repo.maven.apache.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.11/jackson-core-asl-1.9.11.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
@@ -672,6 +536,27 @@
          </licenses>
          <downloadUrls>
             <string>https://repo.maven.apache.org/maven2/javax/activation/activation/1.1/activation-1.1.jar</string>
+         </downloadUrls>
+      </dependency>
+      <dependency>
+         <name>JavaMail API jar</name>
+         <groupId>javax.mail</groupId>
+         <artifactId>javax.mail-api</artifactId>
+         <version>1.4.4</version>
+         <projectUrl>http://kenai.com/projects/javamail/javax.mail-api</projectUrl>
+         <type>jar</type>
+         <licenses>
+            <license>
+               <name>CDDL</name>
+               <url>http://www.sun.com/cddl</url>
+            </license>
+            <license>
+               <name>GPLv2+CE</name>
+               <url>https://glassfish.dev.java.net/public/CDDL+GPL.html</url>
+            </license>
+         </licenses>
+         <downloadUrls>
+            <string>https://repo.maven.apache.org/maven2/javax/mail/javax.mail-api/1.4.4/javax.mail-api-1.4.4.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
@@ -717,353 +602,6 @@
          </downloadUrls>
       </dependency>
       <dependency>
-         <name>JAX-RS provider for JSON content type</name>
-         <groupId>org.codehaus.jackson</groupId>
-         <artifactId>jackson-jaxrs</artifactId>
-         <version>1.9.2</version>
-         <projectUrl>http://jackson.codehaus.org</projectUrl>
-         <type>jar</type>
-         <licenses>
-            <license>
-               <name>The Apache Software License, Version 2.0</name>
-               <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-            </license>
-            <license>
-               <name>GNU Lesser General Public License (LGPL), Version 2.1</name>
-               <url>http://www.fsf.org/licensing/licenses/lgpl.txt</url>
-            </license>
-         </licenses>
-         <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/org/codehaus/jackson/jackson-jaxrs/1.9.2/jackson-jaxrs-1.9.2.jar</string>
-         </downloadUrls>
-      </dependency>
-      <dependency>
-         <name>JAXB API bundle for GlassFish V3</name>
-         <groupId>javax.xml.bind</groupId>
-         <artifactId>jaxb-api</artifactId>
-         <version>2.2.2</version>
-         <projectUrl>https://jaxb.dev.java.net/</projectUrl>
-         <type>jar</type>
-         <licenses>
-            <license>
-               <name>CDDL 1.1</name>
-               <url>https://glassfish.dev.java.net/public/CDDL+GPL_1_1.html</url>
-            </license>
-            <license>
-               <name>GPL2 w/ CPE</name>
-               <url>https://glassfish.dev.java.net/public/CDDL+GPL_1_1.html</url>
-            </license>
-         </licenses>
-         <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/javax/xml/bind/jaxb-api/2.2.2/jaxb-api-2.2.2.jar</string>
-         </downloadUrls>
-      </dependency>
-      <dependency>
-         <name>JAXB RI</name>
-         <groupId>com.sun.xml.bind</groupId>
-         <artifactId>jaxb-impl</artifactId>
-         <version>2.2.3-1</version>
-         <projectUrl>http://jaxb.java.net/</projectUrl>
-         <type>jar</type>
-         <licenses>
-            <license>
-               <name>CDDL 1.1</name>
-               <url>https://glassfish.java.net/public/CDDL+GPL_1_1.html</url>
-            </license>
-            <license>
-               <name>GPL2 w/ CPE</name>
-               <url>https://glassfish.java.net/public/CDDL+GPL_1_1.html</url>
-            </license>
-         </licenses>
-         <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/com/sun/xml/bind/jaxb-impl/2.2.3-1/jaxb-impl-2.2.3-1.jar</string>
-         </downloadUrls>
-      </dependency>
-      <dependency>
-         <name>jersey-core</name>
-         <groupId>com.sun.jersey</groupId>
-         <artifactId>jersey-core</artifactId>
-         <version>1.19</version>
-         <projectUrl>https://jersey.java.net/jersey-core/</projectUrl>
-         <type>jar</type>
-         <licenses>
-            <license>
-               <name>CDDL 1.1</name>
-               <url>http://glassfish.java.net/public/CDDL+GPL_1_1.html</url>
-            </license>
-            <license>
-               <name>GPL2 w/ CPE</name>
-               <url>http://glassfish.java.net/public/CDDL+GPL_1_1.html</url>
-            </license>
-         </licenses>
-         <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/com/sun/jersey/jersey-core/1.19/jersey-core-1.19.jar</string>
-         </downloadUrls>
-      </dependency>
-      <dependency>
-         <name>jersey-guice</name>
-         <groupId>com.sun.jersey.contribs</groupId>
-         <artifactId>jersey-guice</artifactId>
-         <version>1.19</version>
-         <projectUrl>https://jersey.java.net/jersey-contribs/jersey-guice/</projectUrl>
-         <type>jar</type>
-         <licenses>
-            <license>
-               <name>CDDL 1.1</name>
-               <url>http://glassfish.java.net/public/CDDL+GPL_1_1.html</url>
-            </license>
-            <license>
-               <name>GPL2 w/ CPE</name>
-               <url>http://glassfish.java.net/public/CDDL+GPL_1_1.html</url>
-            </license>
-         </licenses>
-         <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/com/sun/jersey/contribs/jersey-guice/1.19/jersey-guice-1.19.jar</string>
-         </downloadUrls>
-      </dependency>
-      <dependency>
-         <name>jersey-json</name>
-         <groupId>com.sun.jersey</groupId>
-         <artifactId>jersey-json</artifactId>
-         <version>1.19</version>
-         <projectUrl>https://jersey.java.net/jersey-json/</projectUrl>
-         <type>jar</type>
-         <licenses>
-            <license>
-               <name>CDDL 1.1</name>
-               <url>http://glassfish.java.net/public/CDDL+GPL_1_1.html</url>
-            </license>
-            <license>
-               <name>GPL2 w/ CPE</name>
-               <url>http://glassfish.java.net/public/CDDL+GPL_1_1.html</url>
-            </license>
-         </licenses>
-         <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/com/sun/jersey/jersey-json/1.19/jersey-json-1.19.jar</string>
-         </downloadUrls>
-      </dependency>
-      <dependency>
-         <name>jersey-server</name>
-         <groupId>com.sun.jersey</groupId>
-         <artifactId>jersey-server</artifactId>
-         <version>1.19</version>
-         <projectUrl>https://jersey.java.net/jersey-server/</projectUrl>
-         <type>jar</type>
-         <licenses>
-            <license>
-               <name>CDDL 1.1</name>
-               <url>http://glassfish.java.net/public/CDDL+GPL_1_1.html</url>
-            </license>
-            <license>
-               <name>GPL2 w/ CPE</name>
-               <url>http://glassfish.java.net/public/CDDL+GPL_1_1.html</url>
-            </license>
-         </licenses>
-         <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/com/sun/jersey/jersey-server/1.19/jersey-server-1.19.jar</string>
-         </downloadUrls>
-      </dependency>
-      <dependency>
-         <name>jersey-servlet</name>
-         <groupId>com.sun.jersey</groupId>
-         <artifactId>jersey-servlet</artifactId>
-         <version>1.19</version>
-         <projectUrl>https://jersey.java.net/jersey-servlet/</projectUrl>
-         <type>jar</type>
-         <licenses>
-            <license>
-               <name>CDDL 1.1</name>
-               <url>http://glassfish.java.net/public/CDDL+GPL_1_1.html</url>
-            </license>
-            <license>
-               <name>GPL2 w/ CPE</name>
-               <url>http://glassfish.java.net/public/CDDL+GPL_1_1.html</url>
-            </license>
-         </licenses>
-         <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/com/sun/jersey/jersey-servlet/1.19/jersey-servlet-1.19.jar</string>
-         </downloadUrls>
-      </dependency>
-      <dependency>
-         <name>Jettison</name>
-         <groupId>org.codehaus.jettison</groupId>
-         <artifactId>jettison</artifactId>
-         <version>1.1</version>
-         <type>jar</type>
-         <licenses/>
-         <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/org/codehaus/jettison/jettison/1.1/jettison-1.1.jar</string>
-         </downloadUrls>
-      </dependency>
-      <dependency>
-         <name>Jetty :: Continuation</name>
-         <groupId>org.eclipse.jetty</groupId>
-         <artifactId>jetty-continuation</artifactId>
-         <version>9.3.8.v20160314</version>
-         <projectUrl>http://www.eclipse.org/jetty</projectUrl>
-         <type>jar</type>
-         <licenses>
-            <license>
-               <name>Apache Software License - Version 2.0</name>
-               <url>http://www.apache.org/licenses/LICENSE-2.0</url>
-            </license>
-            <license>
-               <name>Eclipse Public License - Version 1.0</name>
-               <url>http://www.eclipse.org/org/documents/epl-v10.php</url>
-            </license>
-         </licenses>
-         <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-continuation/9.3.8.v20160314/jetty-continuation-9.3.8.v20160314.jar</string>
-         </downloadUrls>
-      </dependency>
-      <dependency>
-         <name>Jetty :: Http Utility</name>
-         <groupId>org.eclipse.jetty</groupId>
-         <artifactId>jetty-http</artifactId>
-         <version>9.3.8.v20160314</version>
-         <projectUrl>http://www.eclipse.org/jetty</projectUrl>
-         <type>jar</type>
-         <licenses>
-            <license>
-               <name>Apache Software License - Version 2.0</name>
-               <url>http://www.apache.org/licenses/LICENSE-2.0</url>
-            </license>
-            <license>
-               <name>Eclipse Public License - Version 1.0</name>
-               <url>http://www.eclipse.org/org/documents/epl-v10.php</url>
-            </license>
-         </licenses>
-         <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-http/9.3.8.v20160314/jetty-http-9.3.8.v20160314.jar</string>
-         </downloadUrls>
-      </dependency>
-      <dependency>
-         <name>Jetty :: IO Utility</name>
-         <groupId>org.eclipse.jetty</groupId>
-         <artifactId>jetty-io</artifactId>
-         <version>9.3.8.v20160314</version>
-         <projectUrl>http://www.eclipse.org/jetty</projectUrl>
-         <type>jar</type>
-         <licenses>
-            <license>
-               <name>Apache Software License - Version 2.0</name>
-               <url>http://www.apache.org/licenses/LICENSE-2.0</url>
-            </license>
-            <license>
-               <name>Eclipse Public License - Version 1.0</name>
-               <url>http://www.eclipse.org/org/documents/epl-v10.php</url>
-            </license>
-         </licenses>
-         <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-io/9.3.8.v20160314/jetty-io-9.3.8.v20160314.jar</string>
-         </downloadUrls>
-      </dependency>
-      <dependency>
-         <name>Jetty :: Security</name>
-         <groupId>org.eclipse.jetty</groupId>
-         <artifactId>jetty-security</artifactId>
-         <version>9.3.8.v20160314</version>
-         <projectUrl>http://www.eclipse.org/jetty</projectUrl>
-         <type>jar</type>
-         <licenses>
-            <license>
-               <name>Apache Software License - Version 2.0</name>
-               <url>http://www.apache.org/licenses/LICENSE-2.0</url>
-            </license>
-            <license>
-               <name>Eclipse Public License - Version 1.0</name>
-               <url>http://www.eclipse.org/org/documents/epl-v10.php</url>
-            </license>
-         </licenses>
-         <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-security/9.3.8.v20160314/jetty-security-9.3.8.v20160314.jar</string>
-         </downloadUrls>
-      </dependency>
-      <dependency>
-         <name>Jetty :: Server Core</name>
-         <groupId>org.eclipse.jetty</groupId>
-         <artifactId>jetty-server</artifactId>
-         <version>9.3.8.v20160314</version>
-         <projectUrl>http://www.eclipse.org/jetty</projectUrl>
-         <type>jar</type>
-         <licenses>
-            <license>
-               <name>Apache Software License - Version 2.0</name>
-               <url>http://www.apache.org/licenses/LICENSE-2.0</url>
-            </license>
-            <license>
-               <name>Eclipse Public License - Version 1.0</name>
-               <url>http://www.eclipse.org/org/documents/epl-v10.php</url>
-            </license>
-         </licenses>
-         <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-server/9.3.8.v20160314/jetty-server-9.3.8.v20160314.jar</string>
-         </downloadUrls>
-      </dependency>
-      <dependency>
-         <name>Jetty :: Servlet Handling</name>
-         <groupId>org.eclipse.jetty</groupId>
-         <artifactId>jetty-servlet</artifactId>
-         <version>9.3.8.v20160314</version>
-         <projectUrl>http://www.eclipse.org/jetty</projectUrl>
-         <type>jar</type>
-         <licenses>
-            <license>
-               <name>Apache Software License - Version 2.0</name>
-               <url>http://www.apache.org/licenses/LICENSE-2.0</url>
-            </license>
-            <license>
-               <name>Eclipse Public License - Version 1.0</name>
-               <url>http://www.eclipse.org/org/documents/epl-v10.php</url>
-            </license>
-         </licenses>
-         <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-servlet/9.3.8.v20160314/jetty-servlet-9.3.8.v20160314.jar</string>
-         </downloadUrls>
-      </dependency>
-      <dependency>
-         <name>Jetty :: Utilities</name>
-         <groupId>org.eclipse.jetty</groupId>
-         <artifactId>jetty-util</artifactId>
-         <version>9.3.8.v20160314</version>
-         <projectUrl>http://www.eclipse.org/jetty</projectUrl>
-         <type>jar</type>
-         <licenses>
-            <license>
-               <name>Apache Software License - Version 2.0</name>
-               <url>http://www.apache.org/licenses/LICENSE-2.0</url>
-            </license>
-            <license>
-               <name>Eclipse Public License - Version 1.0</name>
-               <url>http://www.eclipse.org/org/documents/epl-v10.php</url>
-            </license>
-         </licenses>
-         <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-util/9.3.8.v20160314/jetty-util-9.3.8.v20160314.jar</string>
-         </downloadUrls>
-      </dependency>
-      <dependency>
-         <name>Jetty :: Utility Servlets and Filters</name>
-         <groupId>org.eclipse.jetty</groupId>
-         <artifactId>jetty-servlets</artifactId>
-         <version>9.3.8.v20160314</version>
-         <projectUrl>http://www.eclipse.org/jetty</projectUrl>
-         <type>jar</type>
-         <licenses>
-            <license>
-               <name>Apache Software License - Version 2.0</name>
-               <url>http://www.apache.org/licenses/LICENSE-2.0</url>
-            </license>
-            <license>
-               <name>Eclipse Public License - Version 1.0</name>
-               <url>http://www.eclipse.org/org/documents/epl-v10.php</url>
-            </license>
-         </licenses>
-         <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-servlets/9.3.8.v20160314/jetty-servlets-9.3.8.v20160314.jar</string>
-         </downloadUrls>
-      </dependency>
-      <dependency>
          <name>jsr166y</name>
          <groupId>org.codehaus.jsr166-mirror</groupId>
          <artifactId>jsr166y</artifactId>
@@ -1072,23 +610,6 @@
          <licenses/>
          <downloadUrls>
             <string>https://repo.maven.apache.org/maven2/org/codehaus/jsr166-mirror/jsr166y/1.7.0/jsr166y-1.7.0.jar</string>
-         </downloadUrls>
-      </dependency>
-      <dependency>
-         <name>jsr311-api</name>
-         <groupId>javax.ws.rs</groupId>
-         <artifactId>jsr311-api</artifactId>
-         <version>1.1.1</version>
-         <projectUrl>https://jsr311.dev.java.net</projectUrl>
-         <type>jar</type>
-         <licenses>
-            <license>
-               <name>CDDL License</name>
-               <url>http://www.opensource.org/licenses/cddl1.php</url>
-            </license>
-         </licenses>
-         <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/javax/ws/rs/jsr311-api/1.1.1/jsr311-api-1.1.1.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
@@ -1106,27 +627,6 @@
          </licenses>
          <downloadUrls>
             <string>https://repo.maven.apache.org/maven2/junit/junit/4.12/junit-4.12.jar</string>
-         </downloadUrls>
-      </dependency>
-      <dependency>
-         <name>Logback Access Module</name>
-         <groupId>ch.qos.logback</groupId>
-         <artifactId>logback-access</artifactId>
-         <version>1.1.2</version>
-         <projectUrl>http://logback.qos.ch</projectUrl>
-         <type>jar</type>
-         <licenses>
-            <license>
-               <name>Eclipse Public License - v 1.0</name>
-               <url>http://www.eclipse.org/legal/epl-v10.html</url>
-            </license>
-            <license>
-               <name>GNU Lesser General Public License</name>
-               <url>http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html</url>
-            </license>
-         </licenses>
-         <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/ch/qos/logback/logback-access/1.1.2/logback-access-1.1.2.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
@@ -1154,8 +654,8 @@
          <name>Logback Core Module</name>
          <groupId>ch.qos.logback</groupId>
          <artifactId>logback-core</artifactId>
-         <version>1.1.2</version>
-         <projectUrl>http://logback.qos.ch</projectUrl>
+         <version>1.1.3</version>
+         <projectUrl>http://logback.qos.ch/logback-core</projectUrl>
          <type>jar</type>
          <licenses>
             <license>
@@ -1168,41 +668,7 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/ch/qos/logback/logback-core/1.1.2/logback-core-1.1.2.jar</string>
-         </downloadUrls>
-      </dependency>
-      <dependency>
-         <name>Metrics Core Library</name>
-         <groupId>com.yammer.metrics</groupId>
-         <artifactId>metrics-core</artifactId>
-         <version>2.1.3</version>
-         <projectUrl>http://metrics.codahale.com/metrics-core/</projectUrl>
-         <type>jar</type>
-         <licenses>
-            <license>
-               <name>Apache License 2.0</name>
-               <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
-            </license>
-         </licenses>
-         <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/com/yammer/metrics/metrics-core/2.1.3/metrics-core-2.1.3.jar</string>
-         </downloadUrls>
-      </dependency>
-      <dependency>
-         <name>Metrics Servlet</name>
-         <groupId>com.yammer.metrics</groupId>
-         <artifactId>metrics-servlet</artifactId>
-         <version>2.1.3</version>
-         <projectUrl>http://metrics.codahale.com/metrics-servlet/</projectUrl>
-         <type>jar</type>
-         <licenses>
-            <license>
-               <name>Apache License 2.0</name>
-               <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
-            </license>
-         </licenses>
-         <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/com/yammer/metrics/metrics-servlet/2.1.3/metrics-servlet-2.1.3.jar</string>
+            <string>https://repo.maven.apache.org/maven2/ch/qos/logback/logback-core/1.1.3/logback-core-1.1.3.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
@@ -1373,47 +839,6 @@
          </licenses>
          <downloadUrls>
             <string>https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.6.3/slf4j-api-1.6.3.jar</string>
-         </downloadUrls>
-      </dependency>
-      <dependency>
-         <name>Streaming API for XML</name>
-         <groupId>javax.xml.stream</groupId>
-         <artifactId>stax-api</artifactId>
-         <version>1.0-2</version>
-         <type>jar</type>
-         <licenses>
-            <license>
-               <name>GNU General Public Library</name>
-               <url>http://www.gnu.org/licenses/gpl.txt</url>
-            </license>
-            <license>
-               <name>COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.0</name>
-               <url>http://www.sun.com/cddl/cddl.html</url>
-            </license>
-         </licenses>
-         <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2.jar</string>
-         </downloadUrls>
-      </dependency>
-      <dependency>
-         <name>Xml Compatibility extensions for Jackson</name>
-         <groupId>org.codehaus.jackson</groupId>
-         <artifactId>jackson-xc</artifactId>
-         <version>1.9.2</version>
-         <projectUrl>http://jackson.codehaus.org</projectUrl>
-         <type>jar</type>
-         <licenses>
-            <license>
-               <name>The Apache Software License, Version 2.0</name>
-               <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-            </license>
-            <license>
-               <name>GNU Lesser General Public License (LGPL), Version 2.1</name>
-               <url>http://www.fsf.org/licensing/licenses/lgpl.txt</url>
-            </license>
-         </licenses>
-         <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/org/codehaus/jackson/jackson-xc/1.9.2/jackson-xc-1.9.2.jar</string>
          </downloadUrls>
       </dependency>
    </dependencies>
