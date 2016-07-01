@@ -21,7 +21,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.intuit.autumn</groupId>
     <artifactId>autumn</artifactId>
-    <version>1.0.20160626031951</version>
+    <version>1.0.20160701074253</version>
     <packaging>pom</packaging>
     <name>${project.artifactId}</name>
     <url>https://github.com/intuit/Autumn</url>
@@ -93,6 +93,9 @@
         </profile>
         <profile>
             <id>sign</id>
+            <properties>
+                <application.profile>sign</application.profile>
+            </properties>
             <build>
                 <plugins>
                     <plugin>

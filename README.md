@@ -75,7 +75,7 @@ article for more details about how to contribute.
 <dependency>
     <groupId>com.intuit.autumn</groupId>
     <artifactId>autumn</artifactId>
-    <version>1.0.20160513005034</version>
+    <version>1.0.20160626031951</version>
 </dependency>
 ```
 
