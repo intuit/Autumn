@@ -190,7 +190,7 @@
          <name>autumn-api</name>
          <groupId>com.intuit.autumn</groupId>
          <artifactId>autumn-api</artifactId>
-         <version>1.0.2016060621-SNAPSHOT</version>
+         <version>1.0.20160701074253-SNAPSHOT</version>
          <projectUrl>https://github.com/intuit/Autumn/modules/autumn-api</projectUrl>
          <type>jar</type>
          <licenses>
@@ -205,7 +205,7 @@
          <name>autumn-client</name>
          <groupId>com.intuit.autumn</groupId>
          <artifactId>autumn-client</artifactId>
-         <version>1.0.2016060621-SNAPSHOT</version>
+         <version>1.0.20160701074253-SNAPSHOT</version>
          <projectUrl>https://github.com/intuit/Autumn/modules/autumn-client</projectUrl>
          <type>jar</type>
          <licenses>
@@ -220,7 +220,7 @@
          <name>autumn-manage</name>
          <groupId>com.intuit.autumn</groupId>
          <artifactId>autumn-manage</artifactId>
-         <version>1.0.2016060621-SNAPSHOT</version>
+         <version>1.0.20160701074253-SNAPSHOT</version>
          <projectUrl>https://github.com/intuit/Autumn/modules/autumn-manage</projectUrl>
          <type>jar</type>
          <licenses>
@@ -235,7 +235,7 @@
          <name>autumn-metrics</name>
          <groupId>com.intuit.autumn</groupId>
          <artifactId>autumn-metrics</artifactId>
-         <version>1.0.2016060621-SNAPSHOT</version>
+         <version>1.0.20160701074253-SNAPSHOT</version>
          <projectUrl>https://github.com/intuit/Autumn/modules/autumn-metrics</projectUrl>
          <type>jar</type>
          <licenses>
@@ -250,7 +250,7 @@
          <name>autumn-service</name>
          <groupId>com.intuit.autumn</groupId>
          <artifactId>autumn-service</artifactId>
-         <version>1.0.2016060621-SNAPSHOT</version>
+         <version>1.0.20160701074253-SNAPSHOT</version>
          <projectUrl>https://github.com/intuit/Autumn/modules/autumn-service</projectUrl>
          <type>jar</type>
          <licenses>
@@ -265,7 +265,7 @@
          <name>autumn-utils</name>
          <groupId>com.intuit.autumn</groupId>
          <artifactId>autumn-utils</artifactId>
-         <version>1.0.2016060621-SNAPSHOT</version>
+         <version>1.0.20160701074253-SNAPSHOT</version>
          <projectUrl>https://github.com/intuit/Autumn/modules/autumn-utils</projectUrl>
          <type>jar</type>
          <licenses>
@@ -280,7 +280,7 @@
          <name>autumn-web</name>
          <groupId>com.intuit.autumn</groupId>
          <artifactId>autumn-web</artifactId>
-         <version>1.0.2016060621-SNAPSHOT</version>
+         <version>1.0.20160701074253-SNAPSHOT</version>
          <projectUrl>https://github.com/intuit/Autumn/modules/autumn-web</projectUrl>
          <type>jar</type>
          <licenses>
