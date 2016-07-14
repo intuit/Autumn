@@ -25,7 +25,7 @@
     <packaging>pom</packaging>
     <name>${project.artifactId}</name>
     <url>https://github.com/intuit/Autumn</url>
-    <description>Opinionated micro-service kernel.</description>
+    <description>A/B Testing Platform</description>
     <properties>
         <application.name>${project.artifactId}-${project.version}-${application.profile}</application.name>
         <application.version>1.0</application.version>
