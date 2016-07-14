@@ -159,7 +159,7 @@ public class HttpCallImplWithConnectionPooling<T> implements HttpCall<T> {
 
     private Client getClient(final HttpCallConfig<T> config) {
         // If either use connection pooling
-        if (!config.getUseConnectionPooling() || client != null) {
+        if (!config.getUseConnectionPooling() || client == null) {
             MultiThreadedHttpConnectionManager connectionManager = new MultiThreadedHttpConnectionManager();
 
             if (config.getMaxConnectionPerHost().or(-1) > 0) {
