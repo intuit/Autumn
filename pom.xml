@@ -21,7 +21,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.intuit.autumn</groupId>
     <artifactId>autumn</artifactId>
-    <version>1.0.20160729014721</version>
+    <version>1.0.20160729014721-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>${project.artifactId}</name>
     <url>https://github.com/intuit/Autumn</url>
